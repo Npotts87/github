@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disappearing Ninja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Disappearing_Ninja.css">
+    <script>
+        $(document).ready(function(){
+            
+            $('.pics').click(function(){
+                $(this).hide(4000);
+            });
+
+            $('#reset').click(function(event){
+            event.preventDefault();
+            $('.pics').show(1500);
+            });
+         });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">One minute you're hear the next you're not...</h1>
+            
+
+            
+            <a id="reset" class="btn btn-primary btn-lg" href="#" role="button">That's What She Said!</a>
+        </div>
+        <div class="f1_container">
+            <div class="shadow f1_card">
+                <div class="front face">
+                    <img src="./" style="height: 281px; width: 450px;" />
+                </div>
+                <div class="back face center">Some text inside here</div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

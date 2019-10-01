@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        $(document).ready(function(){
+
+            $('#1').click(function(event){
+            event.preventDefault();
+            $('h1').hide('slow');
+            });
+
+            $('#2').click(function(event){
+            event.preventDefault();
+            $('h1').show('slow');
+            });
+
+            $('#3').click(function(event){
+            event.preventDefault();
+            $('h1, p, #1, #2').toggle('slow');
+            });
+         });
+    </script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Lauren is Awesome!!!</h1>
+        <p class="lead">Lauren is a wonderful pain in the ass</p>
+        <hr class="my-4">
+        <p>Lauren is awesome because she is so funny and amazing. She will brighten your day with a really great joke because obviously she is the funniest in the class. I mean like seriously she is hilarous. There are some many other great quailites but I will stop here for now. If you have any questions, please feel free to ask!</p>
+        <a id="1" class="btn btn-primary btn-lg" href="#" role="button">Hide</a>
+        <a id="2" class="btn btn-primary btn-lg" href="#" role="button">Show</a>
+        <a id="3" class="btn btn-primary btn-lg" href="#" role="button">Toggle</a>
+    </div>    
+</body>
+</html>

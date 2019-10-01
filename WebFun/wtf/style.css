@@ -1,0 +1,84 @@
+*{
+    width: 1000px;
+    margin: 0px;
+    padding: 1px;
+}
+#container{
+    width: 950px;
+    padding: 10px;
+}
+#header{
+    width: auto;
+}
+#header-left, #header-right{
+    display: inline-block;
+}
+#header-left h1, #header-right p{
+    color: rgb(0, 0, 0);
+}
+#header-left h1{
+    display: inline-block;
+    text-align: left;
+    font-family:'Comic Sans MS', 'Comic Sans', 'Marker Felt';
+}
+#header-right p{
+    text-align: right;
+    margin-right: auto;
+    font-weight: bolder;
+}
+#main_content{
+    vertical-align: center;
+    min-height: 500px;
+    width: 100%;
+    background-color: rgb(54, 45, 45);
+    padding: 20px;
+}
+#main_content-upper{
+    min-height: 325px;
+    width: 100%;
+    background-color: none;
+    padding: auto;
+    margin: auto;
+}
+#main_content-upper img{
+    display: inline-block;
+    background-color: rgb(133, 138, 135);
+    margin-right: 20px;
+    padding: 10px;
+    width: 47%;
+}
+#title_bar_1{
+    height: 20px;
+    width: auto;
+    background-color: rgb(67, 67, 71)
+}
+.subcontent-upper{
+    display: inline-block;
+    vertical-align: top;
+    min-height: auto;
+    width: 47%;
+    background-color: rgb(187, 187, 177);
+}
+.subcontent-upper p{
+    text-align: left;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    width: 100%;
+}
+#main_content-lower{
+    min-height: 350px;
+    width: 100%;
+    background-color: rgb(41, 53, 155);
+    padding: auto;
+    margin: auto;
+}
+#title_bar_2, #title_bar_3, #title_bar_4{
+    height: 20px;
+    width: auto;
+    background-color: rgb(67, 67, 71)
+}
+.subcontent-lower{
+    display: inline-block;
+    height: 400px;
+    width: 30%;
+    background-color: rgb(187, 187, 177);
+}

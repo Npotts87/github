@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    background-image: linear-gradient(rgb(99, 178, 228),rgb(1, 26, 41));
+    width: 1625px;
+    height: auto;
+    margin: 0px 0px 0px 15px;
+    padding: 0px 0px 0x 0px;
+}
+.jumbotron{
+    background-color: transparent;
+    width: auto;
+}
+.jumbotron a{
+    opacity: 1;
+    margin: 10px 15px 20px 0px;
+    background-color: black;
+    outline-color: brown;
+}
+.pics img{
+    opacity: 1;
+    height: 200px;
+    width: 200px;
+    margin: -1px -7px -1px -7px;
+}
+#reset{
+    margin-top: 30px;
+}

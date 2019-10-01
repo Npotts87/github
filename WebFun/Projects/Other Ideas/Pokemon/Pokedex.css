@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    background-image: linear-gradient(rgb(99, 253, 132),rgb(4, 121, 56));
+    width: 2800px;
+    height: auto;
+}
+#poke_info{
+    height: 500px;
+    width: 150px;
+    background-image: linear-gradient(rgb(253, 255, 111),rgb(238, 202, 0));
+    box-shadow: 5px 5px 7px #1F1F20;
+}

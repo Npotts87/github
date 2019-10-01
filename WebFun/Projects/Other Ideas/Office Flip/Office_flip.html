@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Office Flip</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="office_flip.css">
+    <script>
+        $(document).ready(function(){
+            
+            $('.pics').click(function(){
+                $(this).hide(4000);
+            });
+
+            $('#reset').click(function(event){
+            event.preventDefault();
+            $('.pics').show(1500);
+            });
+         });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <marquee behavior="slide" direction="left"><h1 class="display-4">What exactly do you do here?</h1></marquee>
+            <div class="f1_container">
+                <div class="shadow f1_card">
+                    <div class="front face">
+                        <img src="./Office_Images/icons/1.jpg" style="height: 200px; width: 200px;" />
+                    </div>
+                    <div class="back face center"><h3>Toby Flenderson</h3><li>(born in 1971 in Indiana)</li><li>HR Rep.</li><li>Dispised by Michael Scott</li></div>
+                </div>
+            </div>
+            <div class="f1_container">
+                <div class="shadow f1_card">
+                    <div class="front face">
+                        <img src="./Office_Images/icons/2.jpg" style="height: 200px; width: 200px;" />
+                    </div>
+                    <div class="back face center"><h3>Creed Bratton</h3><li>(born along time ago)</li><li>Guitarist in "The Grass Roots"</li><li>Quality Assuance Director</li></div>
+                </div>
+            </div>
+            <div class="f1_container">
+                <div class="shadow f1_card">
+                    <div class="front face">
+                        <img src="./Office_Images/icons/3.jpg" style="height: 200px; width: 200px;" />
+                    </div>
+                    <div class="back face center"><h3>Oscar Martinez</h3><li>Lived with Gil</li><li>Doesnt trust calculators</li><li>Fav. Catchphrase "Actually"</li></div>
+                </div>
+            </div>
+            <div class="f1_container">
+                <div class="shadow f1_card">
+                    <div class="front face">
+                        <img src="./Office_Images/icons/4.jpg" style="height: 200px; width: 200px;" />
+                    </div>
+                    <div class="back face center"><h3>Stanley Hudson</h3><li>His heart tried to kill him</li><li>Crossword Puzzles</li><li>He Doesn't Stutter</li></div>
+                </div>
+            </div>
+            <div class="f1_container">
+                <div class="shadow f1_card">
+                    <div class="front face">
+                        <img src="./Office_Images/icons/5.jpg" style="height: 200px; width: 200px;" />
+                    </div>
+                    <div class="back face center"><h3>Dwight Schrute</h3><li>(born January 20, 1968)</li><li>Ownes a large Beet Farm</li><li>Favorite shirt color is Mustard</li></div>
+                </div>
+            </div>
+            <div class="f1_container">
+                <div class="shadow f1_card">
+                    <div class="front face">
+                        <img src="./Office_Images/icons/6.jpg" style="height: 200px; width: 200px;" />
+                    </div>
+                    <div class="back face center"><h3>Jim Halpert</h3><li>(born October 1, 1978)</li><li>Has 2 older brothers</li><li>Has a thing for receptionists</li></div>
+                </div>
+            </div>
+            <div class="f1_container">
+                <div class="shadow f1_card">
+                    <div class="front face">
+                        <img src="./Office_Images/icons/7.jpg" style="height: 200px; width: 200px;" />
+                    </div>
+                    <div class="back face center"><h3>Pam Beesly</h3><li>engaged twice married once</li><li>Seen more of Michael than she wants</li><li>Kind of a dork</li></div>
+                </div>
+            </div>
+            <div class="f1_container">
+                <div class="shadow f1_card">
+                    <div class="front face">
+                        <img src="./Office_Images/icons/8.jpg" style="height: 200px; width: 200px;" />
+                    </div>
+                    <div class="back face center"><h3>Michael Scott</h3><li>(born March 15, 1964)</li><li>Manager Dunder Mifflin Scranton</li><li>AKA Michael Scarn!!!</li></div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

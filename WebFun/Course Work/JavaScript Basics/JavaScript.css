@@ -1,0 +1,44 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header h1, #main_content, #footer{
+    color: #C2D6EB;
+}
+#header, #navigation, #main_content, #footer{
+    border-radius: 25px;
+}
+#container{
+    width: 1200px;
+    background-color: #1B345D;
+    padding: 10px;
+    margin: 0px auto;
+}
+#header{
+    min-height: 75px;
+    background-color: #CE2F35;
+    margin-bottom: 15px;
+}
+#navigation{
+    display: inline-block;
+    vertical-align: top;
+    min-height: 300px;
+    width: 200px;
+    background-color: #297C8C;
+    margin-right: 5px;
+    padding: 20px 20px
+}
+#main_content{
+    display: inline-block;
+    vertical-align: right;
+    height: 450px;
+    width: 800px;
+    background-color: #0D1722;
+    padding: 20px;
+}
+#footer{
+    min-height: 75px;
+    background-color: #5E6573;
+}
+

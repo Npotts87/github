@@ -1,0 +1,1505 @@
+Last login: Mon Sep 30 08:23:59 on ttys001
+Nathans-MacBook-Pro:~ nrp$ cd desktop
+Nathans-MacBook-Pro:desktop nrp$ cd temp
+Nathans-MacBook-Pro:temp nrp$ /..
+-bash: /..: is a directory
+Nathans-MacBook-Pro:temp nrp$ ...
+-bash: ...: command not found
+Nathans-MacBook-Pro:temp nrp$ //
+-bash: //: is a directory
+Nathans-MacBook-Pro:temp nrp$ cd -
+/Users/nrp/desktop
+Nathans-MacBook-Pro:desktop nrp$ cd -
+/Users/nrp/desktop/temp
+\Nathans-MacBook-Pro:temp nrp$ \cd -
+/Users/nrp/desktop
+Nathans-MacBook-Pro:desktop nrp$ cd -
+/Users/nrp/desktop/temp
+Nathans-MacBook-Pro:temp nrp$ cd..
+-bash: cd..: command not found
+Nathans-MacBook-Pro:temp nrp$ cd...
+-bash: cd...: command not found
+Nathans-MacBook-Pro:temp nrp$ cd --
+Nathans-MacBook-Pro:~ nrp$ ~$ brew -v
+-bash: ~$: command not found
+Nathans-MacBook-Pro:~ nrp$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+==> The following existing directories will be made group writable:
+/usr/local/bin
+/usr/local/include
+/usr/local/lib
+/usr/local/lib/pkgconfig
+==> The following existing directories will have their owner set to nrp:
+/usr/local/bin
+/usr/local/include
+/usr/local/lib
+/usr/local/lib/pkgconfig
+==> The following existing directories will have their group set to admin:
+/usr/local/bin
+/usr/local/include
+/usr/local/lib
+/usr/local/lib/pkgconfig
+==> The following new directories will be created:
+/usr/local/etc
+/usr/local/sbin
+/usr/local/share
+/usr/local/var
+/usr/local/opt
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+/usr/local/var/homebrew
+/usr/local/var/homebrew/linked
+/usr/local/Cellar
+/usr/local/Caskroom
+/usr/local/Homebrew
+/usr/local/Frameworks
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/chmod u+rwx /usr/local/bin /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
+Password:
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
+==> /usr/bin/sudo /usr/sbin/chown nrp /usr/local/bin /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin /usr/local/include /usr/local/lib /usr/local/lib/pkgconfig
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/etc /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/etc /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod 755 /usr/local/share/zsh /usr/local/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown nrp /usr/local/etc /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/etc /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Homebrew /usr/local/Frameworks
+==> /usr/bin/sudo /bin/mkdir -p /Users/nrp/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/nrp/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown nrp /Users/nrp/Library/Caches/Homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 42, done.
+remote: Counting objects: 100% (42/42), done.
+remote: Compressing objects: 100% (41/41), done.
+remote: Total 126415 (delta 20), reused 4 (delta 1), pack-reused 126373
+Receiving objects: 100% (126415/126415), 30.11 MiB | 4.30 MiB/s, done.
+Resolving deltas: 100% (92669/92669), done.
+From https://github.com/Homebrew/brew
+ * [new branch]      master     -> origin/master
+ * [new tag]         0.1        -> 0.1
+ * [new tag]         0.2        -> 0.2
+ * [new tag]         0.3        -> 0.3
+ * [new tag]         0.4        -> 0.4
+ * [new tag]         0.5        -> 0.5
+ * [new tag]         0.6        -> 0.6
+ * [new tag]         0.7        -> 0.7
+ * [new tag]         0.7.1      -> 0.7.1
+ * [new tag]         0.8        -> 0.8
+ * [new tag]         0.8.1      -> 0.8.1
+ * [new tag]         0.9        -> 0.9
+ * [new tag]         0.9.1      -> 0.9.1
+ * [new tag]         0.9.2      -> 0.9.2
+ * [new tag]         0.9.3      -> 0.9.3
+ * [new tag]         0.9.4      -> 0.9.4
+ * [new tag]         0.9.5      -> 0.9.5
+ * [new tag]         0.9.8      -> 0.9.8
+ * [new tag]         0.9.9      -> 0.9.9
+ * [new tag]         1.0.0      -> 1.0.0
+ * [new tag]         1.0.1      -> 1.0.1
+ * [new tag]         1.0.2      -> 1.0.2
+ * [new tag]         1.0.3      -> 1.0.3
+ * [new tag]         1.0.4      -> 1.0.4
+ * [new tag]         1.0.5      -> 1.0.5
+ * [new tag]         1.0.6      -> 1.0.6
+ * [new tag]         1.0.7      -> 1.0.7
+ * [new tag]         1.0.8      -> 1.0.8
+ * [new tag]         1.0.9      -> 1.0.9
+ * [new tag]         1.1.0      -> 1.1.0
+ * [new tag]         1.1.1      -> 1.1.1
+ * [new tag]         1.1.10     -> 1.1.10
+ * [new tag]         1.1.11     -> 1.1.11
+ * [new tag]         1.1.12     -> 1.1.12
+ * [new tag]         1.1.13     -> 1.1.13
+ * [new tag]         1.1.2      -> 1.1.2
+ * [new tag]         1.1.3      -> 1.1.3
+ * [new tag]         1.1.4      -> 1.1.4
+ * [new tag]         1.1.5      -> 1.1.5
+ * [new tag]         1.1.6      -> 1.1.6
+ * [new tag]         1.1.7      -> 1.1.7
+ * [new tag]         1.1.8      -> 1.1.8
+ * [new tag]         1.1.9      -> 1.1.9
+ * [new tag]         1.2.0      -> 1.2.0
+ * [new tag]         1.2.1      -> 1.2.1
+ * [new tag]         1.2.2      -> 1.2.2
+ * [new tag]         1.2.3      -> 1.2.3
+ * [new tag]         1.2.4      -> 1.2.4
+ * [new tag]         1.2.5      -> 1.2.5
+ * [new tag]         1.2.6      -> 1.2.6
+ * [new tag]         1.3.0      -> 1.3.0
+ * [new tag]         1.3.1      -> 1.3.1
+ * [new tag]         1.3.2      -> 1.3.2
+ * [new tag]         1.3.3      -> 1.3.3
+ * [new tag]         1.3.4      -> 1.3.4
+ * [new tag]         1.3.5      -> 1.3.5
+ * [new tag]         1.3.6      -> 1.3.6
+ * [new tag]         1.3.7      -> 1.3.7
+ * [new tag]         1.3.8      -> 1.3.8
+ * [new tag]         1.3.9      -> 1.3.9
+ * [new tag]         1.4.0      -> 1.4.0
+ * [new tag]         1.4.1      -> 1.4.1
+ * [new tag]         1.4.2      -> 1.4.2
+ * [new tag]         1.4.3      -> 1.4.3
+ * [new tag]         1.5.0      -> 1.5.0
+ * [new tag]         1.5.1      -> 1.5.1
+ * [new tag]         1.5.10     -> 1.5.10
+ * [new tag]         1.5.11     -> 1.5.11
+ * [new tag]         1.5.12     -> 1.5.12
+ * [new tag]         1.5.13     -> 1.5.13
+ * [new tag]         1.5.14     -> 1.5.14
+ * [new tag]         1.5.2      -> 1.5.2
+ * [new tag]         1.5.3      -> 1.5.3
+ * [new tag]         1.5.4      -> 1.5.4
+ * [new tag]         1.5.5      -> 1.5.5
+ * [new tag]         1.5.6      -> 1.5.6
+ * [new tag]         1.5.7      -> 1.5.7
+ * [new tag]         1.5.8      -> 1.5.8
+ * [new tag]         1.5.9      -> 1.5.9
+ * [new tag]         1.6.0      -> 1.6.0
+ * [new tag]         1.6.1      -> 1.6.1
+ * [new tag]         1.6.10     -> 1.6.10
+ * [new tag]         1.6.11     -> 1.6.11
+ * [new tag]         1.6.12     -> 1.6.12
+ * [new tag]         1.6.13     -> 1.6.13
+ * [new tag]         1.6.14     -> 1.6.14
+ * [new tag]         1.6.15     -> 1.6.15
+ * [new tag]         1.6.16     -> 1.6.16
+ * [new tag]         1.6.17     -> 1.6.17
+ * [new tag]         1.6.2      -> 1.6.2
+ * [new tag]         1.6.3      -> 1.6.3
+ * [new tag]         1.6.4      -> 1.6.4
+ * [new tag]         1.6.5      -> 1.6.5
+ * [new tag]         1.6.6      -> 1.6.6
+ * [new tag]         1.6.7      -> 1.6.7
+ * [new tag]         1.6.8      -> 1.6.8
+ * [new tag]         1.6.9      -> 1.6.9
+ * [new tag]         1.7.0      -> 1.7.0
+ * [new tag]         1.7.1      -> 1.7.1
+ * [new tag]         1.7.2      -> 1.7.2
+ * [new tag]         1.7.3      -> 1.7.3
+ * [new tag]         1.7.4      -> 1.7.4
+ * [new tag]         1.7.5      -> 1.7.5
+ * [new tag]         1.7.6      -> 1.7.6
+ * [new tag]         1.7.7      -> 1.7.7
+ * [new tag]         1.8.0      -> 1.8.0
+ * [new tag]         1.8.1      -> 1.8.1
+ * [new tag]         1.8.2      -> 1.8.2
+ * [new tag]         1.8.3      -> 1.8.3
+ * [new tag]         1.8.4      -> 1.8.4
+ * [new tag]         1.8.5      -> 1.8.5
+ * [new tag]         1.8.6      -> 1.8.6
+ * [new tag]         1.9.0      -> 1.9.0
+ * [new tag]         1.9.1      -> 1.9.1
+ * [new tag]         1.9.2      -> 1.9.2
+ * [new tag]         1.9.3      -> 1.9.3
+ * [new tag]         2.0.0      -> 2.0.0
+ * [new tag]         2.0.1      -> 2.0.1
+ * [new tag]         2.0.2      -> 2.0.2
+ * [new tag]         2.0.3      -> 2.0.3
+ * [new tag]         2.0.4      -> 2.0.4
+ * [new tag]         2.0.5      -> 2.0.5
+ * [new tag]         2.0.6      -> 2.0.6
+ * [new tag]         2.1.0      -> 2.1.0
+ * [new tag]         2.1.1      -> 2.1.1
+ * [new tag]         2.1.10     -> 2.1.10
+ * [new tag]         2.1.11     -> 2.1.11
+ * [new tag]         2.1.2      -> 2.1.2
+ * [new tag]         2.1.3      -> 2.1.3
+ * [new tag]         2.1.4      -> 2.1.4
+ * [new tag]         2.1.5      -> 2.1.5
+ * [new tag]         2.1.6      -> 2.1.6
+ * [new tag]         2.1.7      -> 2.1.7
+ * [new tag]         2.1.8      -> 2.1.8
+ * [new tag]         2.1.9      -> 2.1.9
+HEAD is now at 5354ba84e Merge pull request #6508 from dawidd6/default-prefixes
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+==> Tapping homebrew/core
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core'...
+remote: Enumerating objects: 5039, done.
+remote: Counting objects: 100% (5039/5039), done.
+remote: Compressing objects: 100% (4838/4838), done.
+remote: Total 5039 (delta 46), reused 565 (delta 10), pack-reused 0
+Receiving objects: 100% (5039/5039), 4.03 MiB | 4.43 MiB/s, done.
+Resolving deltas: 100% (46/46), done.
+Tapped 2 commands and 4827 formulae (5,080 files, 12.5MB).
+Already up-to-date.
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+==> Next steps:
+- Run `brew help` to get started
+- Further documentation: 
+    https://docs.brew.sh
+Nathans-MacBook-Pro:~ nrp$ ~$ brew -v
+-bash: ~$: command not found
+Nathans-MacBook-Pro:~ nrp$ $ brew install wget
+-bash: $: command not found
+Nathans-MacBook-Pro:~ nrp$ brew -v
+Homebrew 2.1.11
+Homebrew/homebrew-core (git revision 851c; last commit 2019-09-30)
+Nathans-MacBook-Pro:~ nrp$ brew install wget
+==> Installing dependencies for wget: gettext, libunistring, libidn2 and openssl@1.1
+==> Installing wget dependency: gettext
+==> Downloading https://homebrew.bintray.com/bottles/gettext-0.20.1.mojave.bottl
+==> Downloading from https://akamai.bintray.com/fa/fa2096f80238b8f4d9f3724d52662
+######################################################################## 100.0%
+==> Pouring gettext-0.20.1.mojave.bottle.tar.gz
+==> Caveats
+gettext is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides the BSD gettext library & some software gets confused if both are in the library path.
+
+If you need to have gettext first in your PATH run:
+  echo 'export PATH="/usr/local/opt/gettext/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find gettext you may need to set:
+  export LDFLAGS="-L/usr/local/opt/gettext/lib"
+  export CPPFLAGS="-I/usr/local/opt/gettext/include"
+
+==> Summary
+🍺  /usr/local/Cellar/gettext/0.20.1: 1,899 files, 18.5MB
+==> Installing wget dependency: libunistring
+==> Downloading https://homebrew.bintray.com/bottles/libunistring-0.9.10.mojave.
+==> Downloading from https://akamai.bintray.com/1d/1d0c8e266acddcebeef3d9f6162d6
+######################################################################## 100.0%
+==> Pouring libunistring-0.9.10.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/libunistring/0.9.10: 54 files, 4.4MB
+==> Installing wget dependency: libidn2
+==> Downloading https://homebrew.bintray.com/bottles/libidn2-2.2.0_1.mojave.bott
+==> Downloading from https://akamai.bintray.com/96/96e9b127a4123a1a4ec67f849467b
+######################################################################## 100.0%
+==> Pouring libidn2-2.2.0_1.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/libidn2/2.2.0_1: 70 files, 700.9KB
+==> Installing wget dependency: openssl@1.1
+==> Downloading https://homebrew.bintray.com/bottles/openssl@1.1-1.1.1d.mojave.b
+==> Downloading from https://akamai.bintray.com/10/104ef018b7bb8fcc49f57e5a60359
+######################################################################## 100.0%
+==> Pouring openssl@1.1-1.1.1d.mojave.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl@1.1/certs
+
+and run
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+because openssl/libressl is provided by macOS so don't link an incompatible version.
+
+If you need to have openssl@1.1 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find openssl@1.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+==> Summary
+🍺  /usr/local/Cellar/openssl@1.1/1.1.1d: 7,983 files, 17.9MB
+==> Installing wget
+==> Downloading https://homebrew.bintray.com/bottles/wget-1.20.3_1.mojave.bottle
+==> Downloading from https://akamai.bintray.com/9f/9ff925f814c5ef6f742d4a5680da5
+######################################################################## 100.0%
+==> Pouring wget-1.20.3_1.mojave.bottle.1.tar.gz
+🍺  /usr/local/Cellar/wget/1.20.3_1: 50 files, 4.0MB
+==> Caveats
+==> gettext
+gettext is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides the BSD gettext library & some software gets confused if both are in the library path.
+
+If you need to have gettext first in your PATH run:
+  echo 'export PATH="/usr/local/opt/gettext/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find gettext you may need to set:
+  export LDFLAGS="-L/usr/local/opt/gettext/lib"
+  export CPPFLAGS="-I/usr/local/opt/gettext/include"
+
+==> openssl@1.1
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl@1.1/certs
+
+and run
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+because openssl/libressl is provided by macOS so don't link an incompatible version.
+
+If you need to have openssl@1.1 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find openssl@1.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+Nathans-MacBook-Pro:~ nrp$ python3 -V
+Python 3.7.4
+Nathans-MacBook-Pro:~ nrp$ # type this command
+Nathans-MacBook-Pro:~ nrp$ cd dojo_asignments
+-bash: cd: dojo_asignments: No such file or directory
+Nathans-MacBook-Pro:~ nrp$ cd dojo_assignments
+-bash: cd: dojo_assignments: No such file or directory
+Nathans-MacBook-Pro:~ nrp$ cd DoJo_Assignments
+-bash: cd: DoJo_Assignments: No such file or directory
+Nathans-MacBook-Pro:~ nrp$ cd desktop
+Nathans-MacBook-Pro:desktop nrp$ cd -
+/Users/nrp
+Nathans-MacBook-Pro:~ nrp$ cd desktop dojo_assignments
+Nathans-MacBook-Pro:desktop nrp$ cd -
+/Users/nrp
+Nathans-MacBook-Pro:~ nrp$ cd desktop/dojo_assignments
+Nathans-MacBook-Pro:dojo_assignments nrp$ cd github
+Nathans-MacBook-Pro:github nrp$ mkdir Python_Stack
+Nathans-MacBook-Pro:github nrp$ mkdir my_environments python flask django
+Nathans-MacBook-Pro:github nrp$ cd python_stack
+Nathans-MacBook-Pro:python_stack nrp$ mkdir my_environments python flask django
+Nathans-MacBook-Pro:python_stack nrp$ cd python
+Nathans-MacBook-Pro:python nrp$ mkdir fundimentals OOP
+Nathans-MacBook-Pro:python nrp$ cd -
+/Users/nrp/desktop/dojo_assignments/github/python_stack
+Nathans-MacBook-Pro:python_stack nrp$ cd flask
+Nathans-MacBook-Pro:flask nrp$ mkdir flask_fundimentals flask_mysql
+Nathans-MacBook-Pro:flask nrp$ cd -
+/Users/nrp/desktop/dojo_assignments/github/python_stack
+Nathans-MacBook-Pro:python_stack nrp$ cd django
+Nathans-MacBook-Pro:django nrp$ mkdir django_intro django_orm django_full_stack
+Nathans-MacBook-Pro:django nrp$ cd ---
+-bash: cd: --: invalid option
+cd: usage: cd [-L|-P] [dir]
+Nathans-MacBook-Pro:django nrp$ cd --
+Nathans-MacBook-Pro:~ nrp$ cd applications
+Nathans-MacBook-Pro:applications nrp$ pip3 install django
+Collecting django
+  Downloading https://files.pythonhosted.org/packages/94/9f/a56f7893b1280e5019482260e246ab944d54a9a633a01ed04683d9ce5078/Django-2.2.5-py3-none-any.whl (7.5MB)
+    100% |████████████████████████████████| 7.5MB 3.5MB/s 
+Collecting sqlparse (from django)
+  Downloading https://files.pythonhosted.org/packages/ef/53/900f7d2a54557c6a37886585a91336520e5539e3ae2423ff1102daf4f3a7/sqlparse-0.3.0-py2.py3-none-any.whl
+Collecting pytz (from django)
+  Downloading https://files.pythonhosted.org/packages/87/76/46d697698a143e05f77bec5a526bf4e56a0be61d63425b68f4ba553b51f2/pytz-2019.2-py2.py3-none-any.whl (508kB)
+    100% |████████████████████████████████| 512kB 7.0MB/s 
+Installing collected packages: sqlparse, pytz, django
+Successfully installed django-2.2.5 pytz-2019.2 sqlparse-0.3.0
+You are using pip version 19.0.3, however version 19.2.3 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Nathans-MacBook-Pro:applications nrp$ pip install --upgrade pip
+-bash: pip: command not found
+Nathans-MacBook-Pro:applications nrp$ pip3 install --upgrade pip
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/30/db/9e38760b32e3e7f40cce46dd5fb107b8c73840df38f0046d8e6514e675a1/pip-19.2.3-py2.py3-none-any.whl (1.4MB)
+    100% |████████████████████████████████| 1.4MB 5.7MB/s 
+Installing collected packages: pip
+  Found existing installation: pip 19.0.3
+    Uninstalling pip-19.0.3:
+      Successfully uninstalled pip-19.0.3
+Successfully installed pip-19.2.3
+Nathans-MacBook-Pro:applications nrp$ cd --
+Nathans-MacBook-Pro:~ nrp$ cd desktop/dojo_assignments/github/python_stack/my_environments
+Nathans-MacBook-Pro:my_environments nrp$ python3 -m venv py3Env
+Nathans-MacBook-Pro:my_environments nrp$ source py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package    Version
+---------- -------
+Django     2.2.5  
+pip        19.2.3 
+pytz       2019.2 
+setuptools 40.8.0 
+sqlparse   0.3.0  
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip install flask
+Collecting flask
+  Downloading https://files.pythonhosted.org/packages/9b/93/628509b8d5dc749656a9641f4caf13540e2cdec85276964ff8f43bbb1d3b/Flask-1.1.1-py2.py3-none-any.whl (94kB)
+     |████████████████████████████████| 102kB 6.6MB/s 
+Collecting itsdangerous>=0.24 (from flask)
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting Jinja2>=2.10.1 (from flask)
+  Downloading https://files.pythonhosted.org/packages/1d/e7/fd8b501e7a6dfe492a433deb7b9d833d39ca74916fa8bc63dd1a4947a671/Jinja2-2.10.1-py2.py3-none-any.whl (124kB)
+     |████████████████████████████████| 133kB 10.1MB/s 
+Collecting click>=5.1 (from flask)
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+     |████████████████████████████████| 81kB 18.2MB/s 
+Collecting Werkzeug>=0.15 (from flask)
+  Downloading https://files.pythonhosted.org/packages/ce/42/3aeda98f96e85fd26180534d36570e4d18108d62ae36f87694b476b83d6f/Werkzeug-0.16.0-py2.py3-none-any.whl (327kB)
+     |████████████████████████████████| 327kB 10.9MB/s 
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10.1->flask)
+  Downloading https://files.pythonhosted.org/packages/ce/c6/f000f1af136ef74e4a95e33785921c73595c5390403f102e9b231b065b7a/MarkupSafe-1.1.1-cp37-cp37m-macosx_10_6_intel.whl
+Installing collected packages: itsdangerous, MarkupSafe, Jinja2, click, Werkzeug, flask
+Successfully installed Jinja2-2.10.1 MarkupSafe-1.1.1 Werkzeug-0.16.0 click-7.0 flask-1.1.1 itsdangerous-1.1.0
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ deactivate
+Nathans-MacBook-Pro:my_environments nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ pip3 uninstall django
+Uninstalling Django-2.2.5:
+  Would remove:
+    /Library/Frameworks/Python.framework/Versions/3.7/bin/django-admin
+    /Library/Frameworks/Python.framework/Versions/3.7/bin/django-admin.py
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/Django-2.2.5.dist-info/*
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/*
+Proceed (y/n)? y
+  Successfully uninstalled Django-2.2.5
+Nathans-MacBook-Pro:my_environments nrp$ source py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip3 install django
+Collecting django
+  Using cached https://files.pythonhosted.org/packages/94/9f/a56f7893b1280e5019482260e246ab944d54a9a633a01ed04683d9ce5078/Django-2.2.5-py3-none-any.whl
+Requirement already satisfied: sqlparse in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from django) (0.3.0)
+Requirement already satisfied: pytz in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from django) (2019.2)
+Installing collected packages: django
+Successfully installed django-2.2.5
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ deactivate
+Nathans-MacBook-Pro:my_environments nrp$ cd --
+Nathans-MacBook-Pro:~ nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:~ nrp$ pip3 uninstall django
+Uninstalling Django-2.2.5:
+  Would remove:
+    /Library/Frameworks/Python.framework/Versions/3.7/bin/django-admin
+    /Library/Frameworks/Python.framework/Versions/3.7/bin/django-admin.py
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/Django-2.2.5.dist-info/*
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/*
+Proceed (y/n)? y
+  Successfully uninstalled Django-2.2.5
+Nathans-MacBook-Pro:~ nrp$ pip3 uninstall flask
+Uninstalling Flask-1.1.1:
+  Would remove:
+    /Library/Frameworks/Python.framework/Versions/3.7/bin/flask
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/Flask-1.1.1.dist-info/*
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/*
+Proceed (y/n)? y
+  Successfully uninstalled Flask-1.1.1
+Nathans-MacBook-Pro:~ nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:~ nrp$ source py3Env/bin/activate
+-bash: py3Env/bin/activate: No such file or directory
+Nathans-MacBook-Pro:~ nrp$ cd desktop/dojo_assignments/github/python_stack/my_environments
+-bash: cd: desktop/dojo_assignments/github/python_stack/my_environments: No such file or directory
+Nathans-MacBook-Pro:~ nrp$ cd dokuments/github/python_stack/my_environments
+-bash: cd: dokuments/github/python_stack/my_environments: No such file or directory
+Nathans-MacBook-Pro:~ nrp$ cd documents/github/python_stack/my_environments
+-bash: cd: documents/github/python_stack/my_environments: No such file or directory
+Nathans-MacBook-Pro:~ nrp$ cd dojo/github/python_stack/my_environments
+Nathans-MacBook-Pro:my_environments nrp$ source py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip3 install django
+Collecting django
+  Using cached https://files.pythonhosted.org/packages/94/9f/a56f7893b1280e5019482260e246ab944d54a9a633a01ed04683d9ce5078/Django-2.2.5-py3-none-any.whl
+Requirement already satisfied: sqlparse in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from django) (0.3.0)
+Requirement already satisfied: pytz in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from django) (2019.2)
+Installing collected packages: django
+Successfully installed django-2.2.5
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip3 install flask
+Collecting flask
+  Using cached https://files.pythonhosted.org/packages/9b/93/628509b8d5dc749656a9641f4caf13540e2cdec85276964ff8f43bbb1d3b/Flask-1.1.1-py2.py3-none-any.whl
+Requirement already satisfied: itsdangerous>=0.24 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from flask) (1.1.0)
+Requirement already satisfied: Jinja2>=2.10.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from flask) (2.10.1)
+Requirement already satisfied: Werkzeug>=0.15 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from flask) (0.16.0)
+Requirement already satisfied: click>=5.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from flask) (7.0)
+Requirement already satisfied: MarkupSafe>=0.23 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from Jinja2>=2.10.1->flask) (1.1.1)
+Installing collected packages: flask
+Successfully installed flask-1.1.1
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ deactivate
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ cd --
+Nathans-MacBook-Pro:~ nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:~ nrp$ cd dojo/github/python_stack/my_environments
+Nathans-MacBook-Pro:my_environments nrp$ source py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ clear
+
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ deactivate
+Nathans-MacBook-Pro:my_environments nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ python3 rm -r venv py3Env
+/Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python: can't open file 'rm': [Errno 2] No such file or directory
+Nathans-MacBook-Pro:my_environments nrp$ python3 -r venv py3Env
+Unknown option: -r
+usage: /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+Nathans-MacBook-Pro:my_environments nrp$ python3 rm venv py3Env
+/Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python: can't open file 'rm': [Errno 2] No such file or directory
+Nathans-MacBook-Pro:my_environments nrp$ rm -r venv py3Env
+rm: venv: No such file or directory
+Nathans-MacBook-Pro:my_environments nrp$ python3 -m venv py3Env
+Nathans-MacBook-Pro:my_environments nrp$ python3 -r venv py3Env
+Unknown option: -r
+usage: /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+Nathans-MacBook-Pro:my_environments nrp$ python3 - venv py3Env
+Python 3.7.4 (v3.7.4:e09359112e, Jul  8 2019, 14:54:52) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> -h
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'h' is not defined
+>>> 
+>>> cd --
+  File "<stdin>", line 1
+    cd --
+        ^
+SyntaxError: invalid syntax
+>>> cd -
+  File "<stdin>", line 1
+    cd -
+       ^
+SyntaxError: invalid syntax
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> () exit
+  File "<stdin>", line 1
+    () exit
+          ^
+SyntaxError: invalid syntax
+>>> exit()
+Nathans-MacBook-Pro:my_environments nrp$ python3 -r venv py3Env
+Unknown option: -r
+usage: /Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+Nathans-MacBook-Pro:my_environments nrp$ python -h
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Options and arguments (and corresponding environment variables):
+-B     : don't write .py[co] files on import; also PYTHONDONTWRITEBYTECODE=x
+-c cmd : program passed in as string (terminates option list)
+-d     : debug output from parser; also PYTHONDEBUG=x
+-E     : ignore PYTHON* environment variables (such as PYTHONPATH)
+-h     : print this help message and exit (also --help)
+-i     : inspect interactively after running script; forces a prompt even
+         if stdin does not appear to be a terminal; also PYTHONINSPECT=x
+-m mod : run library module as a script (terminates option list)
+-O     : optimize generated bytecode slightly; also PYTHONOPTIMIZE=x
+-OO    : remove doc-strings in addition to the -O optimizations
+-R     : use a pseudo-random salt to make hash() values of various types be
+         unpredictable between separate invocations of the interpreter, as
+         a defense against denial-of-service attacks
+-Q arg : division options: -Qold (default), -Qwarn, -Qwarnall, -Qnew
+-s     : don't add user site directory to sys.path; also PYTHONNOUSERSITE
+-S     : don't imply 'import site' on initialization
+-t     : issue warnings about inconsistent tab usage (-tt: issue errors)
+-u     : unbuffered binary stdout and stderr; also PYTHONUNBUFFERED=x
+         see man page for details on internal buffering relating to '-u'
+-v     : verbose (trace import statements); also PYTHONVERBOSE=x
+         can be supplied multiple times to increase verbosity
+-V     : print the Python version number and exit (also --version)
+-W arg : warning control; arg is action:message:category:module:lineno
+         also PYTHONWARNINGS=arg
+-x     : skip first line of source, allowing use of non-Unix forms of #!cmd
+-3     : warn about Python 3.x incompatibilities that 2to3 cannot trivially fix
+file   : program read from script file
+-      : program read from stdin (default; interactive mode if a tty)
+arg ...: arguments passed to program in sys.argv[1:]
+
+Other environment variables:
+PYTHONSTARTUP: file executed on interactive startup (no default)
+PYTHONPATH   : ':'-separated list of directories prefixed to the
+               default module search path.  The result is sys.path.
+PYTHONHOME   : alternate <prefix> directory (or <prefix>:<exec_prefix>).
+               The default module search path uses <prefix>/pythonX.X.
+PYTHONCASEOK : ignore case in 'import' statements (Windows).
+PYTHONIOENCODING: Encoding[:errors] used for stdin/stdout/stderr.
+PYTHONHASHSEED: if this variable is set to 'random', the effect is the same
+   as specifying the -R option: a random value is used to seed the hashes of
+   str, bytes and datetime objects.  It can also be set to an integer
+   in the range [0,4294967295] to get hash values with a predictable seed.
+Nathans-MacBook-Pro:my_environments nrp$ rm -r venv py3Env
+rm: venv: No such file or directory
+Nathans-MacBook-Pro:my_environments nrp$ python3 rm venv py3Env
+/Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python: can't open file 'rm': [Errno 2] No such file or directory
+Nathans-MacBook-Pro:my_environments nrp$ python3 -m venv py3Env
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ pip3 uninstall django
+Uninstalling Django-2.2.5:
+  Would remove:
+    /Library/Frameworks/Python.framework/Versions/3.7/bin/django-admin
+    /Library/Frameworks/Python.framework/Versions/3.7/bin/django-admin.py
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/Django-2.2.5.dist-info/*
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/*
+Proceed (y/n)? y
+  Successfully uninstalled Django-2.2.5
+Nathans-MacBook-Pro:my_environments nrp$ pip3 uninstall flask
+Uninstalling Flask-1.1.1:
+  Would remove:
+    /Library/Frameworks/Python.framework/Versions/3.7/bin/flask
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/Flask-1.1.1.dist-info/*
+    /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/*
+Proceed (y/n)? y
+  Successfully uninstalled Flask-1.1.1
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ python3 rm venv py3Env
+/Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python: can't open file 'rm': [Errno 2] No such file or directory
+Nathans-MacBook-Pro:my_environments nrp$ python3 rm venv py3Env
+/Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python: can't open file 'rm': [Errno 2] No such file or directory
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ python3 -m venv py3Env
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ source py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package    Version
+---------- -------
+pip        19.0.3 
+setuptools 40.8.0 
+You are using pip version 19.0.3, however version 19.2.3 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip install upgrade pip
+Collecting upgrade
+  Could not find a version that satisfies the requirement upgrade (from versions: )
+No matching distribution found for upgrade
+You are using pip version 19.0.3, however version 19.2.3 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip3 install upgrade pip
+Collecting upgrade
+  Could not find a version that satisfies the requirement upgrade (from versions: )
+No matching distribution found for upgrade
+You are using pip version 19.0.3, however version 19.2.3 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip3 install --upgrade pip
+Collecting pip
+  Using cached https://files.pythonhosted.org/packages/30/db/9e38760b32e3e7f40cce46dd5fb107b8c73840df38f0046d8e6514e675a1/pip-19.2.3-py2.py3-none-any.whl
+Installing collected packages: pip
+  Found existing installation: pip 19.0.3
+    Uninstalling pip-19.0.3:
+      Successfully uninstalled pip-19.0.3
+Successfully installed pip-19.2.3
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package    Version
+---------- -------
+pip        19.2.3 
+setuptools 40.8.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ deactivate
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ source py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package    Version
+---------- -------
+pip        19.2.3 
+setuptools 40.8.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip install flask
+Collecting flask
+  Using cached https://files.pythonhosted.org/packages/9b/93/628509b8d5dc749656a9641f4caf13540e2cdec85276964ff8f43bbb1d3b/Flask-1.1.1-py2.py3-none-any.whl
+Collecting Werkzeug>=0.15 (from flask)
+  Using cached https://files.pythonhosted.org/packages/ce/42/3aeda98f96e85fd26180534d36570e4d18108d62ae36f87694b476b83d6f/Werkzeug-0.16.0-py2.py3-none-any.whl
+Collecting itsdangerous>=0.24 (from flask)
+  Using cached https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting Jinja2>=2.10.1 (from flask)
+  Using cached https://files.pythonhosted.org/packages/1d/e7/fd8b501e7a6dfe492a433deb7b9d833d39ca74916fa8bc63dd1a4947a671/Jinja2-2.10.1-py2.py3-none-any.whl
+Collecting click>=5.1 (from flask)
+  Using cached https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10.1->flask)
+  Using cached https://files.pythonhosted.org/packages/ce/c6/f000f1af136ef74e4a95e33785921c73595c5390403f102e9b231b065b7a/MarkupSafe-1.1.1-cp37-cp37m-macosx_10_6_intel.whl
+Installing collected packages: Werkzeug, itsdangerous, MarkupSafe, Jinja2, click, flask
+Successfully installed Jinja2-2.10.1 MarkupSafe-1.1.1 Werkzeug-0.16.0 click-7.0 flask-1.1.1 itsdangerous-1.1.0
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+setuptools   40.8.0 
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ deactivate
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ source py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip install django
+Collecting django
+  Using cached https://files.pythonhosted.org/packages/94/9f/a56f7893b1280e5019482260e246ab944d54a9a633a01ed04683d9ce5078/Django-2.2.5-py3-none-any.whl
+Collecting sqlparse (from django)
+  Using cached https://files.pythonhosted.org/packages/ef/53/900f7d2a54557c6a37886585a91336520e5539e3ae2423ff1102daf4f3a7/sqlparse-0.3.0-py2.py3-none-any.whl
+Collecting pytz (from django)
+  Using cached https://files.pythonhosted.org/packages/87/76/46d697698a143e05f77bec5a526bf4e56a0be61d63425b68f4ba553b51f2/pytz-2019.2-py2.py3-none-any.whl
+Installing collected packages: sqlparse, pytz, django
+Successfully installed django-2.2.5 pytz-2019.2 sqlparse-0.3.0
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ deactivate
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ clear
+
+Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ clear
+
+
+
+
+
+
+
+
+
+Nathans-MacBook-Pro:my_environments nrp$ source py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ deactivate
+Nathans-MacBook-Pro:my_environments nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:my_environments nrp$ source py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip install Django==1.11.9
+Collecting Django==1.11.9
+  Downloading https://files.pythonhosted.org/packages/c8/a6/291039f0ce4b9818e0399359866337e6dfe9c0e23d8d94f00e657edbfcd8/Django-1.11.9-py2.py3-none-any.whl (6.9MB)
+     |████████████████████████████████| 7.0MB 5.4MB/s 
+Requirement already satisfied: pytz in ./py3Env/lib/python3.7/site-packages (from Django==1.11.9) (2019.2)
+Installing collected packages: Django
+  Found existing installation: Django 2.2.5
+    Uninstalling Django-2.2.5:
+      Successfully uninstalled Django-2.2.5
+Successfully installed Django-1.11.9
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ pip freeze
+Click==7.0
+Django==1.11.9
+Flask==1.1.1
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+pytz==2019.2
+sqlparse==0.3.0
+Werkzeug==0.16.0
+(py3Env) Nathans-MacBook-Pro:my_environments nrp$ cd ~/documents
+(py3Env) Nathans-MacBook-Pro:documents nrp$ pip freeze > requirements.txt
+(py3Env) Nathans-MacBook-Pro:documents nrp$ ls
+Adobe						NYL
+BNI Podcast Recaps - Group 1.docx		Payment Preferences form - Dylan.pdf
+Bandit Cam config 9-24-17.backup		Photoshop Creations
+Barclay Card - Balance Transfer info.pdf	Pre App Questionnaire - Dewey.pdf
+Contacts - 03-25-2017.abbu			Resume-May2016 (Final).docx
+IMG_1433.psd					Scanned Items
+Infinity Brothers llc				Stock
+MISC Crap					Untitled-1.psd
+Microsoft User Data				WebEx
+Motivate Yourself				com.wd.WDMyCloud
+NJ.pdf						requirements.txt
+NRP USA.mov
+(py3Env) Nathans-MacBook-Pro:documents nrp$ cd ~/nrp
+-bash: cd: /Users/nrp/nrp: No such file or directory
+(py3Env) Nathans-MacBook-Pro:documents nrp$ clear
+
+(py3Env) Nathans-MacBook-Pro:documents nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       1.11.9 
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:documents nrp$ deactivate
+Nathans-MacBook-Pro:documents nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:documents nrp$ source py3Env/bin/activate
+-bash: py3Env/bin/activate: No such file or directory
+Nathans-MacBook-Pro:documents nrp$ source dojo/github/python_stack/my_environments/py3Env/bin/activate
+-bash: dojo/github/python_stack/my_environments/py3Env/bin/activate: No such file or directory
+Nathans-MacBook-Pro:documents nrp$ clear
+
+Nathans-MacBook-Pro:documents nrp$ cd dojo/github/python_stack/my_environments
+-bash: cd: dojo/github/python_stack/my_environments: No such file or directory
+Nathans-MacBook-Pro:documents nrp$ cd --
+Nathans-MacBook-Pro:~ nrp$ source dojo/github/python_stack/my_environments/py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:~ nrp$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       1.11.9 
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip uninstall django
+Uninstalling Django-1.11.9:
+  Would remove:
+    /Users/nrp/DoJo/GitHub/Python_Stack/my_environments/py3Env/bin/django-admin
+    /Users/nrp/DoJo/GitHub/Python_Stack/my_environments/py3Env/bin/django-admin.py
+    /Users/nrp/DoJo/GitHub/Python_Stack/my_environments/py3Env/lib/python3.7/site-packages/Django-1.11.9.dist-info/*
+    /Users/nrp/DoJo/GitHub/Python_Stack/my_environments/py3Env/lib/python3.7/site-packages/django/*
+Proceed (y/n)? y
+  Successfully uninstalled Django-1.11.9
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip install django
+Collecting django
+  Using cached https://files.pythonhosted.org/packages/94/9f/a56f7893b1280e5019482260e246ab944d54a9a633a01ed04683d9ce5078/Django-2.2.5-py3-none-any.whl
+Requirement already satisfied: sqlparse in ./DoJo/GitHub/Python_Stack/my_environments/py3Env/lib/python3.7/site-packages (from django) (0.3.0)
+Requirement already satisfied: pytz in ./DoJo/GitHub/Python_Stack/my_environments/py3Env/lib/python3.7/site-packages (from django) (2019.2)
+Installing collected packages: django
+Successfully installed django-2.2.5
+(py3Env) Nathans-MacBook-Pro:~ nrp$ clear
+
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip list
+Package      Version
+------------ -------
+Click        7.0    
+Django       2.2.5  
+Flask        1.1.1  
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+(py3Env) Nathans-MacBook-Pro:~ nrp$ deactivate
+Nathans-MacBook-Pro:~ nrp$ pip3 list
+Package      Version
+------------ -------
+Click        7.0    
+itsdangerous 1.1.0  
+Jinja2       2.10.1 
+MarkupSafe   1.1.1  
+pip          19.2.3 
+pytz         2019.2 
+setuptools   40.8.0 
+sqlparse     0.3.0  
+Werkzeug     0.16.0 
+Nathans-MacBook-Pro:~ nrp$ source dojo/github/python_stack/my_environments/py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip install Django==1.11.9
+Collecting Django==1.11.9
+  Using cached https://files.pythonhosted.org/packages/c8/a6/291039f0ce4b9818e0399359866337e6dfe9c0e23d8d94f00e657edbfcd8/Django-1.11.9-py2.py3-none-any.whl
+Requirement already satisfied: pytz in ./DoJo/GitHub/Python_Stack/my_environments/py3Env/lib/python3.7/site-packages (from Django==1.11.9) (2019.2)
+Installing collected packages: Django
+  Found existing installation: Django 2.2.5
+    Uninstalling Django-2.2.5:
+      Successfully uninstalled Django-2.2.5
+Successfully installed Django-1.11.9
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip freeze
+Click==7.0
+Django==1.11.9
+Flask==1.1.1
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+pytz==2019.2
+sqlparse==0.3.0
+Werkzeug==0.16.0
+(py3Env) Nathans-MacBook-Pro:~ nrp$ 
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip freeze > requirements.txt
+(py3Env) Nathans-MacBook-Pro:~ nrp$ ls
+Applications
+Cloud Storage
+Creative Cloud Files
+Desktop
+DoJo
+Documents
+Downloads
+Drive1 (old) - WDC WD40 EFRX-68WT0N0 Dec-13 00_26.ddscan
+Google Drive (nathanrpotts@gmail.com)
+Library
+Movies
+Music
+Pictures
+Public
+VirtualBox VMs
+iCloud Drive (Archive)
+nathanrpotts87@gmail.com Creative Cloud Files
+requirements.txt
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip uninstall Django
+Uninstalling Django-1.11.9:
+  Would remove:
+    /Users/nrp/DoJo/GitHub/Python_Stack/my_environments/py3Env/bin/django-admin
+    /Users/nrp/DoJo/GitHub/Python_Stack/my_environments/py3Env/bin/django-admin.py
+    /Users/nrp/DoJo/GitHub/Python_Stack/my_environments/py3Env/lib/python3.7/site-packages/Django-1.11.9.dist-info/*
+    /Users/nrp/DoJo/GitHub/Python_Stack/my_environments/py3Env/lib/python3.7/site-packages/django/*
+Proceed (y/n)? y
+  Successfully uninstalled Django-1.11.9
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip show Django
+(py3Env) Nathans-MacBook-Pro:~ nrp$ pip search Flask
+Flask-SimpleMDE (0.3.0)     - Flask-SimpleMDE - a Flask extension for SimpleMDE
+Flask-Pure (0.5)            - Flask-Pure - a Flask extension for Pure.css
+Flask-OrientDB (0.1)        - A Flask extension for using OrientDB with Flask
+Flask-ElasticUtils (0.1.7)  - ElasticUtils for Flask
+Flask-Waitress (0.0.1)      - Flask Waitress
+Flask-Stripe (0.1.0)        - Flask-Stripe
+Flask-PubSub (0.1.0)        - Flask-PubSub
+flask-helloworld (1.0.0)    - Flask Helloworld
+flask-zs (0.0.19)           - A helpers for Flask.
+sockjs-flask (0.3)          - SockJs for Flask
+Flask-Quik (0.1.1)          - Quik for Flask
+Flask-BDEA (0.1.0)          - Flask-BDEA
+Flask-GripControl (0.0.1)   - Flask GripControl
+Flask-SRI (0.1.0)           - Flask-SRI
+flask-ws (0.0.1.0)          - Websocket for flask.
+Flask-Intercom (0.1.0)      - Flask-Intercom
+Flask-Turbolinks (0.2.0)    - Turbolinks for Flask.
+Flask-Watson (0.1.0)        - Flask-Watson
+Flask-Helper (0.19)         - Flask Helper
+Flask-SPF (0.0.0)           - Flask-SPF
+flask-toolbox (0.0.2)       - A flask toolbox.
+Flask-FileRev (0.1.0)       - Flask-FileRev
+Flask-Shopify (0.2)         - Shopify Flask
+Flask-Ext (0.1)             - Extensions of Flask
+Flask-TaskTiger (0.0.1)     - Flask TaskTiger
+flask-ypaginate (0.1.3)     - Pagination for Flask
+Flask-OAuthlib (0.9.5)      - OAuthlib for Flask
+Flask-Mustache (0.4.1)      - Mustache for Flask
+Flask-Chargebee (0.0.1)     - Flask-Chargebee
+Flask-Keen (0.1.0)          - Flask-Keen
+Flask-Weixin (0.5.0)        - Weixin for Flask.
+flask-abort (0.0.1)         - flask abort
+Fifty-Flask (1.4.0)         - Flask enhancements.
+Flask-NextCaller (0.1.0)    - Flask-NextCaller
+Flask-Gears (0.2)           - Gears for Flask
+Flask-AutoIndex (0.6.4)     - The mod_autoindex for Flask
+Flask-Clearbit (0.1.0)      - Flask-Clearbit
+Flask-FontAwesome (0.1.2)   - FontAwesome for Flask
+Flask-GeoIP (0.1.3)         - Flask-GeoIP -------------  Simple Flask extension for pygeoip.
+airbrake-flask (1.0.7)      - airbrake-flask - Airbrake client for Python Flask
+Flask-Diced (0.3)           - Flask-Diced - CRUD views generator for Flask
+flask-myapi (0.1)           - Flask-MyAPI - RESTful support library for Flask
+Flask-LoginManager (1.1.6)  - Flask-Loginmanager supports multiple roles and permissions for Flask,
+                              inspired by Flask-Login
+Flask-RESTive (0.0.3)       - Flask RESTive is a REST API Flask extension based on Flask-RESTful &
+                              Marshmallow.
+Flask-FlatPagesCut (0.5.1)  - Flask-FlatPagesCut is fork Flask-FlatPages (Provides flat static pages to
+                              a Flask application)
+flask-lesscss (0.9.1)       - A small Flask extension that adds LessCSS support to Flask.
+flask-filters (0.3)         - The Flask Filter to use with flask-restful and Relational DB
+flask-shell (0.1.3)         - Flask extension to improve shell command for the Flask CLI.
+flask-stylus2css (0.1)      - A small Flask extension that adds Stylus support to Flask.
+Flask-Collect (1.3.2)       - Flask-Collect -- Collect static files in Flask application
+flask-coffee2js (0.1.2)     - A small Flask extension that adds CoffeScript support to Flask.
+Flask-Edits (0.8)           - Editable Content in Flask
+Flask-Slack (0.1.5)         - Slack extension for Flask.
+Flask-Triangle3 (0.5.3)     - Integration of AngularJS and Flask.
+Flask-Autodoc (0.1.2)       - Documentation generator for flask
+Flask-Enterprise (1.0)      - Enterprise capabilities for Flask
+Flask-SAML (0.4.3)          - Flask SAML integration
+Flask-Shelve (0.1.1)        - Shelve support for Flask
+Flask-OpenID (1.2.5)        - OpenID support for Flask
+Flask-CKEditor (0.4.3)      - CKEditor integration for Flask.
+Flask-Triangle (0.5.4)      - Integration of AngularJS and Flask.
+Flask-Zero (0.9.6)          - Qiniu Storage for Flask
+Flask-CuttlePool (0.2.0)    - A Flask extension for CuttlePool
+Flask-Funnel (0.1.10)       - Asset management for Flask.
+Flask-Breve (0.2)           - Breve templating with Flask
+Flask-mongobit (0.1.2)      - MongoBit support in Flask
+flask-logsocketio (0.1.4)   - Flask LogSocketIo module
+Flask-SaeStorage (0.9.0)    - SAE Storage for Flask
+Flask-Navigation (0.2.0)    - The navigation of Flask application.
+Flask-Passlib (0.1)         - Flask extension for passlib
+flask-serial (1.1.0)        - Flask extension for the Serial
+flask-discoverer (0.1.4)    - Flask API autodiscovery
+flask-iMail (0.1)           - Mailgun integration for Flask.
+flask-snow (0.2.8)          - Pysnow extension for Flask
+Flask-ZMQ (0.1.2)           - Flask extension for ZMQ
+Flask-wechatpy (0.1.3)      - wechatpy for flask extension
+Flask-Vises (2.1.4)         - A Flask scaffold library
+Flask-PyFCM (0.1.1)         - Flask extension for PyFCM
+Flask-sshtunnel (0.1b2)     - sshtunnel extension for flask
+Flask-CAS (1.0.1)           - Flask extension for CAS
+Flask-Flarf (0.0.5)         - Flask request filtering
+flask-tat (0.0.10)          - Flask TAT client
+Flask-Failsafe (0.2)        - A failsafe for the Flask reloader
+nailpack-flask (0.1.0)      - Flask support for nails
+Flask-Latch (0.1.0)         - Latch extension for Flask
+Flask-Storm (0.2.0)         - Storm integration for Flask.
+Flask-MySQLdb (0.2.0)       - MySQLdb extension for Flask
+flask-blitzdb (0.1)         - Flask extension for blitzdb
+Flask-RBAC (0.3.0)          - RBAC support for Flask
+castle-flask (0.0.1)        - A Flask client for Castle.io
+flask-handlers (0.0.1)      - Handlers for Flask applications
+Flask-Postmark (0.2.0)      - Postmark Flask extension
+flask-keycloak (1.1.0)      - flask integration with keycloak
+Flask-Htmldoom (0.1.2)      - htmldoom integration for Flask
+Flask-PRBAC (0.1.3)         - RBAC support for Flask
+flask-bluelogin (0.2.7)     - Flask BlueLogin module
+Flask-CassandraDB (0.0.1)   - connect cassandra to flask
+Flask-Sendmail (0.1)        - Flask extension for sendmail
+Flask-Fleem (0.0.5)         - Theming for Flask applications
+Flask-Reggie (0.0.2)        - Flask Regex Routes.
+(py3Env) Nathans-MacBook-Pro:~ nrp$ python
+Python 3.7.4 (v3.7.4:e09359112e, Jul  8 2019, 14:54:52) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 4+5
+9
+>>> 31/2
+15.5
+>>> x=9
+>>> y="hello"
+>>> x*y
+'hellohellohellohellohellohellohellohellohello'
+>>> exit()
+(py3Env) Nathans-MacBook-Pro:~ nrp$ source dojo/github/python_stack/python_fundamentals
+-bash: dojo/github/python_stack/python_fundamentals: No such file or directory
+(py3Env) Nathans-MacBook-Pro:~ nrp$ source dojo/github/python_stack/python_fundamentals
+-bash: dojo/github/python_stack/python_fundamentals: No such file or directory
+(py3Env) Nathans-MacBook-Pro:~ nrp$ cd dojo/github/python_stack/python/python_fundamentals
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ touch hello_world.py
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ hello_world.py
+-bash: hello_world.py: command not found
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ open hello_world.py
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+Hello World!
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+Hello World!
+Hello python
+42
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python --version
+Python 3.7.4
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ deactivate
+Nathans-MacBook-Pro:python_fundamentals nrp$ python --version
+Python 2.7.10
+Nathans-MacBook-Pro:python_fundamentals nrp$ python3 --version
+Python 3.7.4
+Nathans-MacBook-Pro:python_fundamentals nrp$ source dojo/github/python_stack/my_environments/py3Env/bin/activate
+-bash: dojo/github/python_stack/my_environments/py3Env/bin/activate: No such file or directory
+Nathans-MacBook-Pro:python_fundamentals nrp$ cd --
+Nathans-MacBook-Pro:~ nrp$ source dojo/github/python_stack/my_environments/py3Env/bin/activate
+(py3Env) Nathans-MacBook-Pro:~ nrp$ cd dojo/github/python_stack/
+(py3Env) Nathans-MacBook-Pro:python_stack nrp$ li
+-bash: li: command not found
+(py3Env) Nathans-MacBook-Pro:python_stack nrp$ ls
+django		flask		my_environments	pip practice	python
+(py3Env) Nathans-MacBook-Pro:python_stack nrp$ cd python
+(py3Env) Nathans-MacBook-Pro:python nrp$ ls
+OOP			python_fundamentals
+(py3Env) Nathans-MacBook-Pro:python nrp$ python_fundamentals
+-bash: python_fundamentals: command not found
+(py3Env) Nathans-MacBook-Pro:python nrp$ cd python_fundamentals
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ touch hello_world.py
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ hello_world.py
+-bash: hello_world.py: command not found
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ open hello_world.py
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+HelloNoelle
+Hello 42
+Traceback (most recent call last):
+  File "hello_world.py", line 11, in <module>
+    print("Hello" + --name)	# with a +	-- this one should give us an error!
+TypeError: can only concatenate str (not "int") to str
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+HelloNoelle
+Hello 42
+I love to eat sushi and pizza.
+I love to eat sushi and pizza.
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ clear
+
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+HelloNoelle
+Hello 42
+Traceback (most recent call last):
+  File "hello_world.py", line 11, in <module>
+    print("Hello" + --name)	# with a +	-- this one should give us an error!
+TypeError: can only concatenate str (not "int") to str
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+HelloNoelle
+Hello 42
+I love to eat sushi and pizza.
+I love to eat sushi and pizza.
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ clear
+
+
+
+
+
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+HelloNoelle
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+Hello Noelle
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+Hello Noelle
+Hello 42
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+Hello Noelle
+Hello 42
+Traceback (most recent call last):
+  File "hello_world.py", line 11, in <module>
+    print("Hello" + name)	# with a +	-- this one should give us an error!
+TypeError: can only concatenate str (not "int") to str
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+Hello Noelle
+Hello 42
+Traceback (most recent call last):
+  File "hello_world.py", line 11, in <module>
+    print("Hello " + name)	# with a +	-- this one should give us an error!
+TypeError: can only concatenate str (not "int") to str
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+Hello Noelle
+Hello 42
+I love to eat sushi and pizza.
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ python hello_world.py
+hello world
+Hello Noelle
+Hello Noelle
+Hello 42
+I love to eat sushi and pizza.
+I love to eat sushi and pizza.
+(py3Env) Nathans-MacBook-Pro:python_fundamentals nrp$ 

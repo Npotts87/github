@@ -1,0 +1,167 @@
+//Basic Foundation 1
+<script>
+//Q#1 Get 1 to 255
+function a(){
+    var arr = [];
+    for(i=0;i<256;i++){
+        arr.push(i);
+    }
+    return(arr);
+}   
+a();    
+</script>
+<script>
+//Q#2 Get even 1000
+function a(){
+    var sum = 0;
+    for(i=1;i<1001;i++){
+        if(i%2===0){
+            sum+=i;
+        }
+    }
+    return(sum);
+}
+a();
+</script>
+<script>
+//Q#3 Sum odd 5000
+function a(){
+    var sum = 0;
+    for(i=1;i<5001;i++){
+        if(i%2===1){
+            sum+=i;
+        }
+    }
+    return(sum);
+}
+a();
+</script>
+<script>
+//#4 Iterate an array
+function a(arr){
+    var sum = 0;
+    for(i=0;i<arr.length;i++){
+        sum+=arr[i];
+    }
+    return(sum);
+}
+console.log (a([1,2,5]));
+</script>
+<script>
+//#5 Find Max
+function findMax(arr){
+    var max = arr[0];
+    for(i=0;i<arr.length;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    return max;
+}
+console.log(findMax([-3,3,7,5]));
+</script>
+<script>
+//#6 Find Average
+function findAvg(arr){
+    var avg=0;
+    for(i=0;i<arr.length;i++){
+        avg+=arr[i];
+    }
+    return avg/arr.length;
+}
+console.log (findAvg([1,3,5,7,20]));
+</script>
+<script>
+//#7 Array odd
+function returnOdd(){
+    var arr = [];
+    for(i=1;i<51;i++){
+        if(i%2===1){
+            arr.push(i);
+        }
+    }
+    return(arr);
+}
+console.log(returnOdd());
+</script>
+<script>
+//#8 Greater than Y
+function greaterthanY(arr,y){
+    var count = 0;
+    for(i=0;i<arr.length;i++){
+        if(arr[i]>y){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(greaterthanY([1, 3, 5, 7],3));
+</script>
+<script>
+//#9 Squares
+function square(arr){
+    for(i=0;i<arr.length;i++){
+        arr[i]*=arr[i];
+    }
+    return arr;
+}
+console.log(square([1,5,10,-2]));
+</script>
+<script>
+//#10 Negatives
+function negatives(arr){
+    for(i=0;i<arr.length;i++){
+        if(arr[i]<0){
+            arr[i]=0;
+        }
+    }
+    return arr;
+}
+console.log(negatives([1,-4,5,-8,0,2]));
+</script>
+<script>
+//#11 Max/Min/Avg
+function maxminavg(arr){
+    var max=arr[0];
+    var min=arr[0];
+    var avg=0;
+    var newarr=[];
+    for(i=0;i<arr.length;i++){
+        avg+=arr[i];
+        if(arr[i]>max){
+            max=arr[i];
+        }
+        if(arr[i]<min){
+            min=arr[i];
+        }
+    }
+    avg/=arr.length;
+    newarr.push(max);    
+    newarr.push(min);
+    newarr.push(avg);
+    return newarr;
+}
+console.log(maxminavg([1,5,10,-2]));
+</script>
+<script>
+//#12 Swap Values
+function swap(arr){
+    var temp = arr[0];
+    arr[0]=arr[arr.length-1];
+    arr[arr.length-1]=temp;
+    return arr;
+}
+console.log (swap([1,5,10,-2]));
+</script>
+<script>
+//#13 Number to string
+function dojo(arr){
+    for(i=0;i<arr.length;i++){
+        if(arr[i]<0){
+            arr[i]='Dojo';
+        }
+    }
+    return arr;
+}
+console.log(dojo([1,-4,3,-9,0,2]));
+</script>

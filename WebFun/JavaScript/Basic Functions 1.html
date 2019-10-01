@@ -1,0 +1,275 @@
+//Basic Function 1
+<script>
+//Question#1
+console.log('Question1')
+
+//  prediction: 35
+//  output: 35
+
+function a(){
+    return 35;
+}
+console.log(a())
+
+</script>
+<script>
+
+//Question#2
+console.log('Question2')
+
+//  prediction: 8
+//  output: 
+
+function a(){
+    return 4;
+}
+console.log(a()+a());
+
+</script>
+<script>
+
+//Question#3
+console.log('Question3')
+
+//  prediction: 6
+//  output: 
+
+function a(b){
+    return b;
+}
+console.log(a(2)+a(4));
+
+</script>
+<script>
+
+//Question#4
+console.log('Question4')
+
+//  prediction: 3, 9
+//  output: 
+
+function a(b){
+    console.log(b);
+    return b*3;
+}
+console.log(a(3));
+
+</script>
+<script>
+
+//Question#5
+console.log('Question5')
+
+//  prediction: 40
+//  output: 
+
+function a(b){
+   return b*4;
+   console.log(b);
+}
+console.log(a(10));
+
+</script>
+<script>
+
+//Question#6
+console.log('Question6')
+
+//  prediction: 4
+//  output: 
+
+function a(b){
+    if(b<10) {
+        return 2;
+    }
+    else     {
+        return 4;
+    }
+    console.log(b);
+}
+console.log(a(15));
+
+</script>
+<script>
+
+//Question#7
+console.log('Question7')
+
+//  prediction: (10, 3), 30
+//  output: 
+
+function a(b,c){
+    return b*c;
+}
+console.log(10,3);
+console.log( a(3,10) );
+
+</script>
+<script>
+
+//Question#8
+console.log('Question8')
+
+//  prediction: 3, 4
+//  output: 
+
+function a(b){
+    for(var i=0; i<10; i++){
+        console.log(i);
+    }
+    return i;
+}
+console.log(3);
+console.log(4);
+
+</script>
+<script>
+
+//Question#9
+console.log('Question9')
+
+//  prediction: 2,5,8,11
+//  output: 
+
+function a(){
+    for(var i=0; i<10; i++){
+        i = i +2;
+        console.log(i);
+    }
+}
+a();
+
+</script>
+<script>
+
+//Question#10
+console.log('Question10')
+
+//  prediction: 0,1,2,3,4,5,6,7,8,9,0
+//  output: 
+
+function a(b,c){
+    for(var i=b; i<c; i++) {
+       console.log(i);
+   }
+   return b*c;
+}
+a(0,10);
+console.log(a(0,10));
+
+</script>
+<script>
+
+//Question#11
+console.log('Question11')
+
+//  prediction: 
+// 0
+// 0,1,2,3,4,5,6,7,8,9
+// 1
+// 0,1,2,3,4,5,6,7,8,9
+// 2
+// 0,1,2,3,4,5,6,7,8,9
+// 3
+// 0,1,2,3,4,5,6,7,8,9
+// 4
+// 0,1,2,3,4,5,6,7,8,9
+// 5
+// 0,1,2,3,4,5,6,7,8,9
+// 6
+// 0,1,2,3,4,5,6,7,8,9
+// 7
+// 0,1,2,3,4,5,6,7,8,9
+// 8
+// 0,1,2,3,4,5,6,7,8,9
+// 9
+// 0,1,2,3,4,5,6,7,8,9
+//  output: 
+
+function a(){
+    for(var i=0; i<10; i++){
+       for(var j=0; j<10; j++){
+           console.log(j);
+       }
+       console.log(i);
+    }
+}
+</script>
+<script>
+
+//Question#12
+console.log('Question12')
+
+//  prediction:
+// 0,0,1,2,3,4,5,6,7,8,9
+// 1,0,1,2,3,4,5,6,7,8,9
+// 2,0,1,2,3,4,5,6,7,8,9
+// 3,0,1,2,3,4,5,6,7,8,9
+// 4,0,1,2,3,4,5,6,7,8,9
+// 5,0,1,2,3,4,5,6,7,8,9
+// 6,0,1,2,3,4,5,6,7,8,9
+// 7,0,1,2,3,4,5,6,7,8,9
+// 8,0,1,2,3,4,5,6,7,8,9
+// 9,0,1,2,3,4,5,6,7,8,9
+//  output: 
+
+function a(){
+    for(var i=0; i<10; i++){
+        for(var j=0; j<10; j++){
+            console.log(i,j);
+        }
+        console.log(j,i);
+    }
+}
+</script>
+<script>
+
+//Question#13
+console.log('Question13')
+
+//  prediction: 15,10
+//  output: 
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+console.log(z);
+
+</script>
+<script>
+
+//Question#14
+console.log('Question14')
+
+//  prediction: 15,10
+//  output: 
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+a();
+console.log(z);
+
+</script>
+<script>
+
+//Question#15
+console.log('Question15')
+
+//  prediction: 15,15
+//  output: 
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+    return z;
+}
+z = a();
+console.log(z);
+
+</script>

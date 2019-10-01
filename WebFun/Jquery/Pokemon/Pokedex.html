@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokidex</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <script>
+
+        $(document).ready(function(){
+            console.log("Jquery is working");
+            var html_str="";
+            for(var i=1; i<=150;i++){
+                html_str+='<img id="'+ i +'" src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + i + '.png">';
+            }
+            $('#pokedex').html(html_str)
+
+            $('img').click( function(){
+                var pokemonID = $(this).attr('id')
+                console.log("Image was clicked you got the id of:"+pokemonID);
+
+                $.get('https://pokeapi.co/api/v2/pokemon/'+pokemonID, function(data){
+                    console.log(data)
+                    var poke_html = ""
+                    poke_html += '<h1>'+ data['name'] +'</h1>'
+                    poke_html += '<img src="'+ data['sprites']['front_default'] + '"">'
+                    poke_html += '<h5>Types: '
+                    for(var i=0; i < data['types'].length; i++){
+                        poke_html += '<li>'+data['types'][i]['type']['name'] +'</li>'
+                    }
+                    poke_html += '</h5>'
+                    poke_html += '<h5>Height: '
+                    poke_html += '<li>'+ data['height'] +'</li>'
+                    poke_html += '</h5>'
+                    poke_html += '<h5>Weight: '
+                    poke_html += '<li>'+ data['weight'] +'</li>'
+                    poke_html += ' </h5>'
+                    $('#poke_info').html(poke_html)
+                })
+            })
+        })
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <h1>The Pokedex</h1>
+                <div class="p-3 mb-2 bg-success" id="pokedex">
+                </div>
+            </div>
+            <div class="col-3 border border-danger, p-3 mb-2 bg-warning text-dark, rounded" id="poke_info">
+                <h1></h1> 
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav{
+    background-color: #0B4B33;
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+}
+
+#left-nav p, #left-nav h1, #right-nav p, #right-nav, #left-nav{
+    display: inline-block;
+}
+
+#left-nav h1, #right-nav p{
+    color: white;
+}
+#left-nav p{
+    width: 230px;
+    color: #43B488;
+    font-weight: bolder;
+    margin-left: 20px;
+
+}
+#left-nav{
+    padding: 20px;
+    padding-left:200px; 
+}
+#right-nav p{
+    margin-right: 15px;
+    font-weight: bolder;
+
+}
+#right-nav{
+    text-align: right;
+    width: 1200px;
+}
+#jumbotron h1{
+    font-weight: lighter;
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+    width: 650px ;
+    margin: auto;
+}
+#jumbotron{
+    text-align: center;
+    margin-top: 120px;
+}
+#jumbotron button{
+    margin-top: 50px;
+    font-size: 150%;
+    font-weight: bolder;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: #45B78B;
+    border-radius: 10px;
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+
+}

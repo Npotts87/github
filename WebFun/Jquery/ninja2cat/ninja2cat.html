@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja 2 Cat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./ninja2cat.css">
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                var temp = $(this).attr('src');
+                $(this).attr('src',$(this).attr('data-alt-src'))
+                $(this).attr('data-alt-src', temp);
+              console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+    <img src='./img/ninja0.png' data-alt-src='./img/cat0.png' />
+    <img src='./img/ninja1.png' data-alt-src='./img/cat1.png' />
+    <img src='./img/ninja2.png' data-alt-src='./img/cat2.png' />
+    <img src='./img/ninja3.png' data-alt-src='./img/cat3.png' />
+    <img src='./img/ninja4.png' data-alt-src='./img/cat4.png' />
+    </div>
+</body>
+</html>

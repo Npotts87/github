@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    background-image: linear-gradient(rgb(168, 183, 192),rgb(44, 49, 53));
+    width: 1625px;
+    height: auto;
+    margin: 0px 0px 0px 15px;
+    padding: 0px 0px 0x 0px;
+}
+img{
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
