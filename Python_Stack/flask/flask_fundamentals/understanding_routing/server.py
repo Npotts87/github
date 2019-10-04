@@ -2,20 +2,25 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-def index():
+def root():
     return ("Hello World")
 @app.route("/dojo")
-def index():
-    return ("Dojo!")
+def dojo():
+    return "<h1>Dojo!</h1>"
 @app.route("/flask")
-def index():
-    return ("Hi Flask!")
+def flask():
+    return "<h1><p style='color:lime'> Hi Flask! </p></h1>"
 @app.route("/jim")
-def index():
+def jim():
     return ("Hi Jim!")
 @app.route("/michael")
-def index():
+def michael():
     return ("Hi Michael!")
-
+@app.route("/repeat/35")
+def repeat():
+    return int("*35")
+@app.route("/hello")
+def hello():
+    return ("/hello")
 if __name__ == "__main__":
     app.run(debug=True)
