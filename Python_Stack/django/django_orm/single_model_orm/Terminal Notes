@@ -1,0 +1,56 @@
+Last login: Mon Sep 30 08:23:59 on ttys001
+
+>>> User.objects.create(first_name="Jim", last_name="Halpert", email_address="Jhalpert@dundermifflin.com", age=41)
+<User: User object>
+
+>>> User.objects.create(first_name="David", last_name="Rose", email_address="drose@roseapothecary.com", age=35)
+<User: User object>
+
+>>> User.objects.create(first_name="Alexis", last_name="Rose", email_address="arose@alexisrose.com", age=30)
+<User: User object>
+
+>>> ^D                                                                                        now exiting InteractiveConsole...
+
+(django) Nathans-MacBook-Pro:single_model_orm nrp$ python3 manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, single_model
+Running migrations:
+  No migrations to apply.
+
+(django) Nathans-MacBook-Pro:single_model_orm nrp$ python3 manage.py shell
+Python 3.7.4 (v3.7.4:e09359112e, Jul  8 2019, 14:54:52) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+
+>>> from apps.single_model.models import *
+
+>>> User.objects.all()
+<QuerySet [User: Jim Halpert, age: 41, User: David Rose, age: 35, User: Alexis Rose, age: 30]>
+
+>>> User.objects.get(id=3)
+User: Alexis Rose, age: 30
+
+>>> User.objects.get(id=1)
+User: Jim Halpert, age: 41
+                                             ^
+>>> User.objects.all().order_by("first_name") 
+<QuerySet [User: Alexis Rose, age: 30, User: David Rose, age: 35, User: Jim Halpert, age: 41]>
+
+>>> User.objects.all().order_by("-first_name")
+<QuerySet [User: Jim Halpert, age: 41, User: David Rose, age: 35, User: Alexis Rose, age: 30]>
+
+>>> user_to_update = User.objects.get(id=3)
+>>> user_to_update.last_name = "Pancakes"
+>>> user_to_update.save()
+
+>>> User.objects.get(id=3)
+User: Alexis Pancakes, age: 30
+
+>>> user_to_delete = User.objects.get(id=2)
+>>> user_to_delete.delete()
+(1, {'single_model.User': 1})
+
+>>> User.objects.all()
+<QuerySet [User: Jim Halpert, age: 41, User: Alexis Pancakes, age: 30]>
+>>> 
