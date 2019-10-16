@@ -14,21 +14,14 @@
         <div class="row">
             <div class="col-6">
                 <h1>Welcome to the Books & Authors Lookup!!!</h1>
+                <h4>What would you like to do today?</h4>
               <form id="new_book" action="/add_new_book" method="POST">
                 {% csrf_token %}
                 <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add Book"></input>
               </form>
-              <form id="view_book" action="/view_book" method="POST">
-                {% csrf_token %}
-                <input type="submit" class="btn btn-primary btn-lg" role="button" value="View Book"></input>
-              </form>
               <form id="new_author" action="/add_new_author" method="POST">
                 {% csrf_token %}
                 <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add Author"></input>
-              </form>
-              <form id="view_author" action="/view_author" method="POST">
-                {% csrf_token %}
-                <input type="submit" class="btn btn-primary btn-lg" role="button" value="View Author"></input>
               </form>
             </div>
             <div class="col-6">

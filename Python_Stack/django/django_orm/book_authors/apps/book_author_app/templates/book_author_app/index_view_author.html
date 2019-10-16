@@ -14,20 +14,15 @@
         <div class="row">
             <div class="col-6">
                 <h1>View Author!!!</h1>
+                <h5>{{author.first_name}} {{author.last_name}}</h5>
+                <h5>{{author.notes}}</h5>
                 <form action="/" method="POST">
                   {% csrf_token %}
                   <input type="submit" class="btn btn-primary btn-lg" role="button" value="HOME"></input>
                 </form>
             </div>
             <div class="col-6">
-                <h1>Author List</h1>
-                  <ul>
-                    {% for author in authors %}
-                      <li>{{author.first_name}} {{author.last_name}}
-                      </li>
-                    {% endfor %}
-                  </ul>
-              </div>
+            </div>
           </div>
       </div>
   </body>

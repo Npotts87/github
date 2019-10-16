@@ -18,7 +18,7 @@
                 <form action="/create_book" method="POST">
                   {% csrf_token %}
                   <p class="lead">Title: <input type="text" name="title"></p>
-                  <p class="lead">Notes: <input type="text" name="desc"></p>
+                  <p class="lead">Description: <input type="text" name="desc"></p>
                   <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add Book!"></input>
                 </form>
                 <form id="home" action="/" method="POST">

@@ -19,4 +19,4 @@ class Author(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __repr__(self):
-        return f"Author: {self.first_name} {self.last_name} - "
+        return f"Author: {self.first_name} {self.last_name} {self.notes} {self.id}"
