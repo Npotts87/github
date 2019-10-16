@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#new_book{
+    padding: 10px;
+}
+#view_book{
+    padding: 10px;
+}
+#new_author{
+    padding: 10px;
+}
+#view_author{
+    padding: 10px;
+}
+#home{
+    padding: 10px;
+}
