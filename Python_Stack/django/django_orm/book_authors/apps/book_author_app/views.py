@@ -30,6 +30,17 @@ def create_author(request):
         return redirect("/view_author/"+str(newly_created_author.id))
 
 def view_author(request, author_id):
-    context = {"author": Author.objects.get(id=author_id)}
+    context = {
+        "author": Author.objects.get(id=author_id),
+        'books': Book.objects.all(),
+    }
     return render(request, "book_author_app/index_view_author.html", context)
-    
+
+def add_book(request, author_id):
+    print("This is author id",author_id)
+    print("this is book id", request.POST['book_id'])
+    author = Author.objects.get(id=author_id)
+    book = Book.objects.get(id=request.POST['book_id'])
+    author.books.add(book)
+
+    return redirect("/view_author/"+author_id)

@@ -15,10 +15,23 @@
             <div class="col-6">
                 <h1>View Author!!!</h1>
                 <h5>{{author.first_name}} {{author.last_name}}</h5>
+                <h5>{{author.id}}</h5>
                 <h5>{{author.notes}}</h5>
                 <form action="/" method="POST">
                   {% csrf_token %}
                   <input type="submit" class="btn btn-primary btn-lg" role="button" value="HOME"></input>
+                </form>
+                {% for book in author.books.all %}                
+                <p>{{book.title}}</p>
+                {% endfor %}
+                <form action="/authors/{{ author.id }}/add_book", method="POST">
+                  {% csrf_token %}
+                      <select placeholder="-select a book-" name="book_id">
+                      {% for book in books %}
+                          <option value="{{ book.id }}">{{ book.title }}</option>
+                      {% endfor %}
+                      </select>
+                      <input type="submit" value="GO">
                 </form>
             </div>
             <div class="col-6">

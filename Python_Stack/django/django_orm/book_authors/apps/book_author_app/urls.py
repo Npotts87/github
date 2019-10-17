@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^add_new_author$', views.add_new_author),
     url(r'^create_author$', views.create_author),    
     url(r'^view_author/(?P<author_id>\d+)$', views.view_author),
+    url(r'^authors/(?P<author_id>\d+)/add_book$', views.add_book),
 ]
