@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login & Registration</title>
-    <link rel="stylesheet" href="../../static/login_reg_app/css/style.css">
+    <title>My World - Login & Registration</title>
+    <link rel="stylesheet" href="../../static/exam_app/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -21,7 +21,8 @@
         <div class="row">
             <div class="col-6">
                 <h1 class="title">Registration</h1>
-                <p class="lead">Fill out the information below. Thank you!</p>
+                <p class="lead">Please fill in your personal information below</p>
+                <p class="lead">Thank you!</p>
                 <form id="submit" action="/create_user" method="POST">
                   {% csrf_token %}
                   <p class="lead">First Name:<input type="text" name="first_name"></p>

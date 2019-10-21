@@ -52,3 +52,16 @@ class User(models.Model):
     objects = UserManager()
     def __repr__(self):
         return f"User: {self.first_name} {self.last_name} {self.email} {self.password} {self.confirm_pw} {self.id}"
+
+
+class Trip(models.Model):
+    destination = models.CharField(max_length=255)
+    start_date = models.DateTimeField(max_length=10)
+    end_date = models.CharField(max_length=255)
+    plan = models.CharField(max_length=255)
+    trips = models.ManyToManyField(User, related_name="users")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __repr__(self):
+        return f"Author: {self.first_name} {self.last_name} {self.notes} {self.id}"

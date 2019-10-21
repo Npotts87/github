@@ -2,12 +2,18 @@
     padding: 0px;
     margin: 0px;
 }
-#submit, #reset{
-    padding: 10px;
+.container{
+    background-color: bisque;
+}
+#submit, #reset, .user_tools{
+    padding: 15px;
 }
 .lead{
     text-align: right;
     padding: 0px 200px 0px 0px;
+}
+.table{
+    padding: 0px 0% 0px 70%;
 }
 .title{
     font-size: 40px;

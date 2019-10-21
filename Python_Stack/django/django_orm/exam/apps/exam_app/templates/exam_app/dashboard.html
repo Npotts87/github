@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My World - Dashboard</title>
+    <link rel="stylesheet" href="../../static/exam_app/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+                <form action="/add_trip_form" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add a New Trip!"></input>
+                </form>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h1>Hey There!</h1>
+                <h3>{{user.first_name}} {{user.last_name}}</h3>
+                <h4>Your Trips...</h4>
+                <div class="table">
+                    <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">End Date</th>
+                            <th scope="col">Plan</th>
+                            <th scope="col">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for user in users %}
+                            <tr>
+                              <td>{{ trip.destination }}</td>
+                              <td>{{ start_date }}</td>
+                              <td>{{ end_date }}</td>
+                              <td><a href="/remove_trip/{{ trip.id }}" role="button">Remove</a></td>
+                              <td><a href="/edit_trip/{{ trip.id }}" role="button">Edit</a></td>
+                            </tr>
+                          {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+            <div class="col-6">
+            </div>
+          </div>
+      </div>
+  </body>
+  </html>

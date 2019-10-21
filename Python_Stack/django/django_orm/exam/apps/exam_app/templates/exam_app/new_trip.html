@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My World - New Trip</title>
+    <link rel="stylesheet" href="../../static/exam_app/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Where are you off to {{user.first_name}} {{user.last_name}}?</h1>
+                <p class="title">Fill in your trip information below</p>
+                <form action="/create_author" method="POST">
+                  {% csrf_token %}
+                  <p class="lead">Destination:<input type="text" name="destination"></p>
+                  <p class="lead">Start Date: <input type="text" name="start_date"></p>
+                  <p class="lead">End Date: <input type="text" name="end_date"></p>
+                  <p class="lead">Plan: <input type="text" name="plan"></p>
+                  <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add Trip!"></input>
+                </form>
+                <form id="home" action="/" method="POST">
+                  {% csrf_token %}
+                  <input type="submit" class="btn btn-primary btn-lg" role="button" value="HOME"></input>
+                </form>
+            </div>
+            <div class="col-6">
+              <h1>Trip List</h1>
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">Destination</th>
+                      <th scope="col">Start Date</th>
+                      <th scope="col">End Date</th>
+                      <th scope="col">Plan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for author in authors %}
+                      <tr>
+                        <td>{{author.id}}</td>
+                        <td>{{ author.first_name }} {{ author.last_name }}</td>
+                        <td><a href="/view_author/{{ author.id }}" role="button">View</a></td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
