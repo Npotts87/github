@@ -12,45 +12,52 @@
 <body>
     <div class="container">
         <div class="header">
-                <form action="/add_trip_form" method="POST">
-                    {% csrf_token %}
-                    <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add a New Trip!"></input>
-                </form>
+            <h5>| <a href="/logout">Logout</a></h5>
+            <form action="/add_trip_form" method="POST">
+                {% csrf_token %}
+                <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add a NewTrip!"></input>
+            </form>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col">
                 <h1>Hey There!</h1>
                 <h3>{{user.first_name}} {{user.last_name}}</h3>
                 <h4>Your Trips...</h4>
-                <div class="table">
-                    <table class="table table-dark">
-                        <thead>
-                          <tr>
-                            <th scope="col">Destination</th>
-                            <th scope="col">Start Date</th>
-                            <th scope="col">End Date</th>
-                            <th scope="col">Plan</th>
-                            <th scope="col">Actions</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {% for user in users %}
-                            <tr>
-                              <td>{{ trip.destination }}</td>
-                              <td>{{ start_date }}</td>
-                              <td>{{ end_date }}</td>
-                              <td><a href="/remove_trip/{{ trip.id }}" role="button">Remove</a></td>
-                              <td><a href="/edit_trip/{{ trip.id }}" role="button">Edit</a></td>
-                            </tr>
-                          {% endfor %}
-                        </tbody>
+                <div class="m-auto">
+                    <table class="table">
+                            <thead>
+                                <tr>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">End Date</th>
+                                <th scope="col">Plan</th>
+                                <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for trip in trips %}
+                                <tr>
+                                    <td><a href="/trips/view/{{trip.id}}">{{ trip.destination }}</a></td>
+                                    <td>{{ trip.start_date }}</td>
+                                    <!-- <td><a href="/trips/edit/{{trip.id}}">{{ trip.destination }}</a></td> -->
+                                    <td>{{ trip.end_date }}</td>
+                                    <td>{{ trip.plan }}</td>
+                                    <td>
+                                        <a href="/trips/edit/{{trip.id}}">Edit</a> |
+                                        <a href="/remove_trip/{{trip.id}}">Remove</a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                                
+                            </tbody>
                     </table>
+
                 </div>
 
-
             </div>
-            <div class="col-6">
-            </div>
+            <!-- <div class="col-6">
+                <a href="http://google.com">google</a>
+            </div> -->
           </div>
       </div>
   </body>

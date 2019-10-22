@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import User
+from .models import *
 import bcrypt
 
 def index(request):
@@ -27,13 +27,15 @@ def user_home(request):
     if 'user_id' not in request.session:
         return redirect('/')
     context = {
-        "user" : User.objects.get(id=request.session['user_id'])
+        "user" : User.objects.get(id=request.session['user_id']),
+        "trips" : Trip.objects.all(),
     }
     return render(request, "exam_app/dashboard.html", context)
 
 def add_trip_form(request):
     context = {
         "user": User.objects.get(id=request.session['user_id']),
+        "trips" :Trip.objects.all(),
     }
     return render(request, "exam_app/new_trip.html", context)
 
@@ -42,6 +44,23 @@ def add_trip_save(request):
         "user": User.objects.get(id=request.session['user_id']),
     }
     return redirect("/create_trip/"+str(user.id))
+
+def create_trip(request):
+    if request.method == "POST":
+        trip = Trip.objects.create(destination= request.POST['destination'], start_date= request.POST['start_date'], end_date= request.POST['end_date'], plan= request.POST['plan'])
+        return redirect("/add_trip_form")
+
+def view_trip(request, id):
+    context = {
+        "trip" : Trip.objects.all(),
+    }
+    return render(request, "exam_app/view_trip.html", context)
+
+def edit_trip(request, id):
+    return render(request, "exam_app/edit_trip.html")
+    
+#def remove_trip(request, id):
+#    return render(request, "exam_app/edit_trip.html")
 
 def create_user(request):
     if request.method == "POST":

@@ -5,6 +5,10 @@
 .container{
     background-color: bisque;
 }
+.header{
+    text-align: right;
+    display: block;
+}
 #submit, #reset, .user_tools{
     padding: 15px;
 }
@@ -12,8 +16,8 @@
     text-align: right;
     padding: 0px 200px 0px 0px;
 }
-.table{
-    padding: 0px 0% 0px 70%;
+.dataTable{
+    /* padding: 0px 0% 0px 70%; */
 }
 .title{
     font-size: 40px;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Handy Helper 2</title>
+    <link rel="stylesheet" href="../../static/exam2_app/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        {% if messages %}
+        <ul class="messages">    
+            {% for message in messages %}    
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <div class="row">
+            <div class="col-6">
+                <h1 class="title">Registration</h1>
+                <p class="lead">Please fill in your personal information below</p>
+                <p class="lead">Thank you!</p>
+                <form id="submit" action="/create_user" method="POST">
+                    {% csrf_token %}
+                    <p class="lead">First Name:<input type="text" name="first_name"></p>
+                    <p class="lead">Last Name: <input type="text" name="last_name"></p>
+                    <p class="lead">Email: <input type="text" name="email"></p>
+                    <p class="lead">Password: <input type="text" name="password"></p>
+                    <p class="lead">Confirm PW: <input type="text" name="confirm_pw"></p>
+                    <input type="submit" class="btn btn-primary btn-lg" role="button" value="Submit"></input>
+                </form>
+                <form id="reset" action="/" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" class="btn btn-primary btn-lg" role="button" value="RESET"></input>
+                </form>
+            </div>
+            <div class="col-6">
+                <h1 class="title">Login</h1>
+                <form action="/process_login" method="POST">
+                    {% csrf_token %}
+                    <p class="lead">Email: <input type="text" name="email"></p>
+                    <p class="lead">Password: <input type="text" name="password"></p>
+                    <input type="submit" class="btn btn-primary btn-lg" role="button" value="Login"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -15,15 +15,15 @@
             <div class="col-6">
                 <h1>Where are you off to {{user.first_name}} {{user.last_name}}?</h1>
                 <p class="title">Fill in your trip information below</p>
-                <form action="/create_author" method="POST">
+                <form action="/create_trip" method="POST">
                   {% csrf_token %}
                   <p class="lead">Destination:<input type="text" name="destination"></p>
-                  <p class="lead">Start Date: <input type="text" name="start_date"></p>
-                  <p class="lead">End Date: <input type="text" name="end_date"></p>
+                  <p class="lead">Start Date: <input type="date" name="start_date"></p>
+                  <p class="lead">End Date: <input type="date" name="end_date"></p>
                   <p class="lead">Plan: <input type="text" name="plan"></p>
                   <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add Trip!"></input>
                 </form>
-                <form id="home" action="/" method="POST">
+                <form id="home" action="/user_home" method="POST">
                   {% csrf_token %}
                   <input type="submit" class="btn btn-primary btn-lg" role="button" value="HOME"></input>
                 </form>
@@ -40,11 +40,12 @@
                     </tr>
                   </thead>
                   <tbody>
-                    {% for author in authors %}
+                    {% for trip in trips %}
                       <tr>
-                        <td>{{author.id}}</td>
-                        <td>{{ author.first_name }} {{ author.last_name }}</td>
-                        <td><a href="/view_author/{{ author.id }}" role="button">View</a></td>
+                        <td>{{ trip.destination }}</td>
+                        <td>{{ trip.start_date }}</td>
+                        <td>{{ trip.end_date }}</td>
+                        <td>{{ trip.plan }}</td>
                       </tr>
                     {% endfor %}
                   </tbody>

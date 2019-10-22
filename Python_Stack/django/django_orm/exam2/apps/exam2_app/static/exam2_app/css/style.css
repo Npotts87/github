@@ -1,0 +1,11 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    background-image: linear-gradient(rgb(106, 239, 94),rgb(10, 68, 161));
+    /* background-color: aquamarine; */
+}
+.button{
+    padding: 30px;
+}

@@ -53,15 +53,25 @@ class User(models.Model):
     def __repr__(self):
         return f"User: {self.first_name} {self.last_name} {self.email} {self.password} {self.confirm_pw} {self.id}"
 
+class JobManager(models.Manager):
+    def validate_job(self, postData):
+        print(self)
+        errors = {}
+        if len(postData['title']) < 3:
+            errors["title"] = "Job Name should be at least 3 characters"
+        if len(postData['location']) < 1:
+            errors["location"] = "A location must be provided"
+        return errors
 
-class Trip(models.Model):
-    destination = models.CharField(max_length=255)
-    start_date = models.DateField()
-    end_date = models.DateField()
-    plan = models.CharField(max_length=255)
-    trips = models.ManyToManyField(User, related_name="users")
+class Job(models.Model):
+    title = models.CharField(max_length=255)
+    location = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+    jobs = models.ManyToManyField(User, related_name="users")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    objects = JobManager()
+
 
     def __repr__(self):
-        return f"Trip: {self.first_name} {self.last_name} {self.notes} {self.id}"
+        return f"Job: {self.title} {self.location} {self.description} {self.id} {self.created_at}"
