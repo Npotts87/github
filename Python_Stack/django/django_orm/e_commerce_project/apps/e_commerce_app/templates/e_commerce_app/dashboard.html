@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dunder Mifflin</title>
+    <link rel="stylesheet" href="../../static/e_commerce_app/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hey There {{user.first_name}} {{user.last_name}}</h1>
+            <h3>Your People Persons Paper People...</h3>
+            <h5>| <a href="/logout">Logout</a></h5>
+            <form action="/add_job_form" method="POST">
+                {% csrf_token %}
+                <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add a New Job!"></input>
+            </form>
+        </div>
+        <div class="upper_nav">
+            <div class="nav_links">
+                <a href=""><span>Home</span></a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Projects</a>
+                <a href="">Clients</a>
+            </div>
+        </div>
+        <div class="upper_carousel">
+
+        </div>
+        <div class="left_nav">
+
+        </div>
+        <div class="main_body">
+
+        </div>
+        <div class="lower_nav">
+
+        </div>
+        <div class="footer">
+            
+        </div>
+
+
+
+
+        <!-- <div class="row">
+            <div class="col">
+                <h1>Hey There {{user.first_name}} {{user.last_name}}</h1>
+                <h3>Your Jobs...</h3>
+                <div class="m-auto">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                            <th scope="col">Job Name</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for job in jobs %}
+                            <tr>
+                                <td><a href="/jobs/view/{{job.id}}">{{ job.title }}</a></td>
+                                <td>{{ job.location }}</td>
+                                <td>
+                                    <a href="/jobs/edit_form/{{job.id}}">Edit</a> |
+                                    <a href="/remove_job/{{job.id}}">Remove</a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>

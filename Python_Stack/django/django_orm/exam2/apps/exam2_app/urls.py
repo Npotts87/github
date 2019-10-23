@@ -12,9 +12,7 @@ urlpatterns = [
     url(r'^create_job$', views.create_job),
     url(r'^add_job_save$', views.add_job_save),
     url(r'^jobs/edit/(?P<id>\d+)$', views.edit_job),
-
     url(r'^jobs/edit_form/(?P<id>\d+)$', views.edit_job_form),
-
     url(r'^jobs/view/(?P<id>\d+)$', views.view_job),
     url(r'^remove_job/(?P<id>\d+)$', views.remove_job),
 ]

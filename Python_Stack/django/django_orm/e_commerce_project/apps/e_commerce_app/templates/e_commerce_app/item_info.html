@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dunder Mifflin</title>
+    <link rel="stylesheet" href="../../static/e_commerce_app/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <br>
+                <a class="btn btn-secondary" href="/dashboard" role="button">Dashboard</a>
+                <h1>Title</h1>
+                <h3>{{ job.title }}</h3>
+                <h3>{{ job.location }}</h3>
+                <h3>{{ job.description }}</h3>
+                <h3>{{ job.created_at }}</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
