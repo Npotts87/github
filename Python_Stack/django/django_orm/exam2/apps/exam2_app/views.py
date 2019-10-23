@@ -74,7 +74,7 @@ def add_job_save(request):
     context = {
         "user": User.objects.get(id=request.session['user_id']),
     }
-    return redirect("/create_job/"+str(user.id))
+    return redirect("/create_job/")
 
 def edit_job_form(request, id):
     context = {
@@ -88,13 +88,13 @@ def edit_job(request, id):
         if len(errors) > 0:
             for key, value in errors.items():
                 messages.error(request, value)
-            return redirect("/jobs/edit_form/"+str(job.id)
-    edit = Job.objects.get(id=id)
-    edit.title = request.POST["title"]
-    edit.location = request.POST["location"]
-    edit.description = request.POST["description"]
-    edit.save()
-    return redirect("/dashboard")
+            return redirect("/jobs/edit_form/"+id)
+        edit = Job.objects.get(id=id)
+        edit.title = request.POST["title"]
+        edit.location = request.POST["location"]
+        edit.description = request.POST["description"]
+        edit.save()
+        return redirect("/dashboard")
 
 def view_job(request, id):
     context = {
