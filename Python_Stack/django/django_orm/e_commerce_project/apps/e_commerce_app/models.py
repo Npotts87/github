@@ -53,6 +53,28 @@ class User(models.Model):
     def __repr__(self):
         return f"User: {self.first_name} {self.last_name} {self.email} {self.password} {self.confirm_pw} {self.id}"
 
+class ItemManager(models.Manager):
+    def validate_item(self, postData):
+        print(self)
+        errors = {}
+        if len(postData['title']) < 3:
+            errors["title"] = "Item Name should be at least 3 characters"
+        if len(postData['price']) < 1:
+            errors["price"] = "A PRICE must be provided"
+        if len(postData['description']) < 8:
+            errors["description"] = "A DESCRIPTION must be provided"
+        return errors
+
+class Item(models.Model):
+    title = models.CharField(max_length=255)
+    price = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+    users = models.ManyToManyField(User, related_name="items")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    objects = ItemManager()
+
+
 # class JobManager(models.Manager):
 #     def validate_job(self, postData):
 #         print(self)

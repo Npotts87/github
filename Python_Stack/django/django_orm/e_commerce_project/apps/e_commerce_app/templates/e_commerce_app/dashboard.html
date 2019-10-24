@@ -18,16 +18,16 @@
             <h5>| <a href="/logout">Logout</a></h5>
             <form action="/add_job_form" method="POST">
                 {% csrf_token %}
-                <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add a New Job!"></input>
+                <!-- <input type="submit" class="btn btn-primary btn-lg" role="button" value="Add a New Job!"></input> -->
             </form>
         </div>
         <div class="upper_nav">
             <div class="nav_links">
-                <a href=""><span>Home</span></a>
-                <a href="">About</a>
-                <a href="">Services</a>
-                <a href="">Projects</a>
-                <a href="">Clients</a>
+                <a href="/dashboard"><span>Home</span></a> |
+                <a href="/user_settings">User Settings</a> |
+                <a href="/wish_list">Wish List</a> |
+                <a href="/previous_orders">Previous Orders</a> |
+                <a href="/shopping_cart">Shopping Cart</a>
             </div>
         </div>
         <div class="upper_carousel">

@@ -62,6 +62,53 @@ def dashboard(request):
     }
     return render(request, "e_commerce_app/dashboard.html", context)
 
+def user_settings(request):
+    if 'user_id' not in request.session:
+        return redirect('/')
+    context = {
+        "user" : User.objects.get(id=request.session['user_id'])
+    }
+    return render(request, "e_commerce_app/user_settings.html", context)
+
+def wish_list(request):
+    if 'user_id' not in request.session:
+        return redirect('/')
+    context = {
+        "user" : User.objects.get(id=request.session['user_id']),
+                #"jobs" : Job.objects.all(),
+    }
+    return render(request, "e_commerce_app/wish_list.html", context)
+
+def shopping_cart(request):
+    if 'user_id' not in request.session:
+        return redirect('/')
+    context = {
+        "user" : User.objects.get(id=request.session['user_id']),
+        #"jobs" : Job.objects.all(),
+    }
+    return render(request, "e_commerce_app/shopping_cart.html", context)
+
+def order_complete(request):
+    if 'user_id' not in request.session:
+        return redirect('/')
+    context = {
+        "user" : User.objects.get(id=request.session['user_id'])
+    }
+    return render(request, "e_commerce_app/order_complete.html", context)
+
+def previous_orders(request):
+    if 'user_id' not in request.session:
+        return redirect('/')
+    context = {
+        "user" : User.objects.get(id=request.session['user_id']),
+        #"jobs" : Job.objects.all(),
+    }
+    return render(request, "e_commerce_app/previous_orders.html", context)
+
+
+
+
+
 # def add_job_form(request):
 #     context = {
 #         "user": User.objects.get(id=request.session['user_id']),
