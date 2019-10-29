@@ -8,9 +8,9 @@ import bcrypt
 #     templateData['redirect_url'] = url_for('new_page')
 #     return render_template('main.html', **templateData)
 
-# def front_door(request):
-#     context = {"front_door": User.objects.all()}
-#     return render(request, "e_commerce_app/front_door.html", context)
+def front_door(request):
+    context = {"front_door": User.objects.all()}
+    return render(request, "e_commerce_app/front_door.html", context)
 
 def index(request):
     context = {"home": User.objects.all()}
@@ -105,6 +105,16 @@ def previous_orders(request):
     }
     return render(request, "e_commerce_app/previous_orders.html", context)
 
+def view_item(request, id):
+    context = {
+        "item": Item.objects.get(id=id),
+    }
+    return render(request, "e_commerce_app/item_info.html", context)
+
+def remove_item(request, id):
+    remove = Item.objects.get(id=id)
+    remove.delete()
+    return redirect("/shopping_cart")
 
 
 
@@ -151,14 +161,3 @@ def previous_orders(request):
 #         edit.description = request.POST["description"]
 #         edit.save()
 #         return redirect("/dashboard")
-
-# def view_job(request, id):
-#     context = {
-#         "job": Job.objects.get(id=id),
-#     }
-#     return render(request, "exam2_app/view_job.html", context)
-
-# def remove_job(request, id):
-#     remove = Job.objects.get(id=id)
-#     remove.delete()
-#     return redirect("/dashboard")

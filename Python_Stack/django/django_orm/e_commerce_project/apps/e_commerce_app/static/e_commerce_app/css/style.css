@@ -2,12 +2,37 @@
     padding: 0px;
     margin: 0px;
 }
-.container{
+.jumbotron{
     background-image: linear-gradient(rgb(106, 239, 94),rgb(10, 68, 161));
-    width: 2800px;
+    width: 100%;
     min-height: 700px;
     height: auto;
 }
+.navbar{
+    margin-bottom: 0px;
+}
+
+
+
+
+/* .upper_nav{
+    background-color: rgb(107, 121, 121);
+    width: 100%;
+}
+.nav_links{
+    display: inline-block;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 50;
+}
+.link{
+    padding-left: 150px;
+}
+.nav_links a{
+    color: bisque;
+}
 .button{
     padding: 30px;
-}
+} */

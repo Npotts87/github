@@ -67,7 +67,8 @@ class ItemManager(models.Manager):
 
 class Item(models.Model):
     title = models.CharField(max_length=255)
-    price = models.CharField(max_length=255)
+    unit_size = models.CharField(max_length=255)
+    price = models.CharField(max_length=10)
     description = models.CharField(max_length=255)
     users = models.ManyToManyField(User, related_name="items")
     created_at = models.DateTimeField(auto_now_add=True)
